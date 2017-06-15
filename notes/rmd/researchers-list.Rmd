@@ -1,0 +1,48 @@
+---
+title: "Notes Template"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+root <- rprojroot::find_root(criterion = rprojroot::is_rstudio_project)
+```
+
+# Overview
+
+List of researches involved with public finance in general and fiscal sustainability analysis in specific
+
+# Brazil
+
+## Sérgio Wulff Gobetti
+
+## Rodrigo Octávio Orair
+
+See project for Quartely GFS for Brazil [here](http://repositorio.ipea.gov.br/bitstream/11058/7111/1/BRU_n15_Estatisticas.pdf)
+
+## Monica Mora
+
+[CV](http://www.ipea.gov.br/portal/index.php?option=com_content&view=article&id=25463)
+
+## Fabiana Fontes Rocha
+
+[CV](https://uspdigital.usp.br/tycho/curriculoLattesMostrar?codpes=90519)
+
+## Francisco Lopreato
+
+[CV](http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768685Z1)
+
+# World
+
+## Raffaella Calabrese
+
+[Website](https://www.business-school.ed.ac.uk/about/people/1101/Raffaella/Calabrese)
+
+## Lili Liu
+
+[Website](http://www.worldbank.org/en/about/people/l/lili-liu)
+# References

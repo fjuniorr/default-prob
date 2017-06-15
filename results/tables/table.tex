@@ -1,0 +1,43 @@
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Thu, Apr 20, 2017 - 16:39:46
+% Requires LaTeX packages: dcolumn 
+\begin{table}[!ht] \centering 
+  \caption{AVERAGE JAJA JA} 
+  \label{tbl:model_mfx} 
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{OLS} & \multicolumn{1}{c}{FE OLS} & \multicolumn{1}{c}{Logit} & \multicolumn{1}{c}{BCUML} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(5)}\\ 
+\hline \\[-1.8ex] 
+ Public sector employee & 0.038^{***} & 0.042^{**} & 0.038^{***} & 0.064^{*} \\ 
+  & (0.009) & (0.021) & (0.009) & (.) \\ 
+  & & & & \\ 
+ Health - Very Good / Excelent & 0.119^{***} & 0.055^{***} & 0.118^{***} & 0.069^{***} \\ 
+  & (0.008) & (0.012) & (0.007) & (.) \\ 
+  & & & & \\ 
+ Log(Monthly net income) & 0.098^{***} & 0.062^{***} & 0.101^{***} & 0.096^{***} \\ 
+  & (0.008) & (0.017) & (0.008) & (.) \\ 
+  & & & & \\ 
+ Educ - GCSE / Other & -0.053^{***} & 0.186^{**} & -0.053^{***} & 0.178 \\ 
+  & (0.017) & (0.086) & (0.017) & (.) \\ 
+  & & & & \\ 
+ Job security & -0.185^{***} & -0.110^{***} & -0.188^{***} & -0.135^{***} \\ 
+  & (0.011) & (0.016) & (0.012) & (.) \\ 
+  & & & & \\ 
+ Performance pay & 0.027^{***} & 0.042^{***} & 0.026^{***} & 0.058^{**} \\ 
+  & (0.009) & (0.013) & (0.009) & (.) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+No. individuals & \multicolumn{1}{c}{12,028} & \multicolumn{1}{c}{6,676} & \multicolumn{1}{c}{12,028} & \multicolumn{1}{c}{2,741} \\
+No. observations & \multicolumn{1}{c}{21,747} & \multicolumn{1}{c}{16,395} & \multicolumn{1}{c}{21,747} & \multicolumn{1}{c}{7,008} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}%
+} 
+\fnote{Notes: $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01 and standard errors reported in parentheses\\
+       1) BCUML is the bias-corrected unconditional fixed effects logit estimator. The R package \texttt{bife} didn't report standard errors for the marginal effects and we do the same here. Although in theory they could be computed by the delta method, this is outside the scope of this study. The reported significance levels used the p-value of the coefficients reported in \ref{tbl:model_coef}\\
+       2) We only report statistically significant variables whose average marginal effects were above the threshold of $1\%$ as a criterion of practical significance}
+\end{table} 

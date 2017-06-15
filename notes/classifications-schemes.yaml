@@ -1,0 +1,102 @@
+---
+dataset: 
+annex: 
+table: 
+variable: 
+---
+
+
+
+CDP: 
+  name: Cadastro da Dívida Pública
+
+DCA: 
+  name: Declaração das Contas Anuais
+RREO: 
+  name: Relatório Resumido da Execução Orçamentária
+RGF: 
+  name: Relatório de Gestão Fiscal
+
+
+dataset: DCA
+  -
+  annex: 
+  name:
+
+---
+dataset: 
+annex: 
+table: 
+variable: 
+---    
+
+
+dataset: RREO
+dataset: RGF
+
+
+dataset: COC
+
+
+dataset: CDP
+
+---
+dataset: 
+period: 
+source: 
+url: 
+tags: 
+---
+
+---
+unit:
+period:
+currency:  
+balance_sheet:
+  stocks:
+    assets:
+    liabilities:
+statement_operations:
+  flows:    
+    cash:
+      revenues:
+      expenditures:
+    accrual:
+      revenues:
+      expenditures:      
+---
+
+---
+publicacao: 
+relatorio: 
+demonstrativo: 
+quadro: 
+tabela: 
+campo: 
+celula: 
+variavel: 
+---
+
+---
+dataset: 
+annex:
+table: 
+report: 
+statement: 
+variable: 
+---
+
+constructs: [object, class, resource, ]
+
+MIME type
+
+organization
+
+standard, manual
+
+taxonomy, ontology, classification; schema
+
+publication, report, statistics, statistical domain
+
+software, technology, framework, spec, implementation
+

@@ -1,0 +1,84 @@
+---
+title: "Study Plan"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+# Computing
+
+## Functional Programming
+
+## Regex
+
+## Visualization
+
+## Workflow for Data Analysis
+
+## Web Scraping
+
+# Math
+
+## Integrals
+
+## Sequences and Series
+
+## Differential Equations
+
+## Difference Equations
+
+## Dynamic Optimization
+
+# Stats
+
+## Factor Analysis
+
+## Multilevel Modelling
+
+## Decision Theory
+
+## Extreme Value Theory
+
+## Statistical Learning
+
+# Econ
+
+## Binary Choice
+
+### Rare Events
+
+### Misclassified outcomes
+
+## Fiscal Sustainability
+
+### Fiscal Decentralization
+
+### Fiscal Crisis
+
+### Fiscal Institutions
+
+### Debt Sustainability Analysis
+
+## Panel Data
+
+## Game Theory
+
+## Information Economics
+
+# Finance
+
+## Time Value of Money
+
+## Financial Ratios
+
+## Risk Management
+
+# Standard Statistical Classifications
+
+## Government Finance Statistics Manual (GFS)
+
+## Public Sector Debt Statistics-Guide for Compilers and Users (PSDS)
+
+## International Public Sector Accounting Standards (IPSAS)

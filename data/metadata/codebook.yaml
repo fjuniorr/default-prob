@@ -1,0 +1,75 @@
+QDCC: 
+  name: Quadro de Dados Contábeis Consolidados
+  publisher:
+    - name: SISTN
+      url: https://www.contaspublicas.caixa.gov.br
+      period: [2000, 2012]
+    - name: SICONFI
+      url: https://siconfi.tesouro.gov.br/
+      period: 2013
+  annex:
+    - id: AB
+      name: Balanço Patrimonial
+    - id: C
+      name: Demonstrativo de Receitas Orçamentárias
+    - id: D
+      name: Demonstrativo de Despesas Orçamentárias por Natureza
+    - id: E
+      name: Demonstrativo de Despesas Orçamentárias por Função
+    - id: F
+      name: Demonstrativo da Execução dos Restos a Pagar – Despesas Orçamentárias por Natureza
+    - id: G
+      name: Demonstrativo da Execução dos Restos a Pagar – Despesas Orçamentárias por Função
+    - id: HI
+      name: Demonstrativo das Variações Patrimoniais
+
+
+dataset: DCA
+period: 2014-2016
+source: SICONFI
+url: https://siconfi.tesouro.gov.br/
+
+dataset: Execução Orcamentaria dos Estados
+period: 1995-2013
+source: STN
+url: http://www.tesouro.fazenda.gov.br/finbra-financas-municipais
+
+dataset: RREO
+period: 2006-2014
+source: SISTN
+url: https://www.contaspublicas.caixa.gov.br
+
+dataset: RREO
+period: 2015-2016
+source: SICONFI
+url: https://siconfi.tesouro.gov.br/
+
+dataset: RGF
+period: 2006-2014
+source: SISTN
+url: https://www.contaspublicas.caixa.gov.br
+
+dataset: RGF
+period: 2015-2016
+source: SICONFI
+url: https://siconfi.tesouro.gov.br/
+
+dataset: COC
+period: 2006-2013
+source: SISTN
+url: https://www.contaspublicas.caixa.gov.br
+
+dataset: CDP
+period: 2014-2016
+source: SADIPEM
+url: https://sadipem.tesouro.gov.br
+
+dataset: Estatísticas Fiscais Regionalizadas
+period: 2008-2016
+source: BACEN
+url: http://www.bcb.gov.br/htms/Infecon/serieHistEstatFR.asp
+
+dataset: Contas Regionais do Brasil
+period: 
+source: IBGE
+url: http://www.ibge.gov.br/home/estatistica/economia/contasregionais/2014/default.shtm

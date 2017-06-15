@@ -1,0 +1,49 @@
+\documentclass[12pt,oneside,a4paper]{report}
+%-------------------------------------------------------
+% PACKAGES
+
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% COMANDS FOR TABLE
+\usepackage{dcolumn}
+\usepackage{caption}
+\newcommand\fnote[1]{\captionsetup{font=scriptsize, format=hang}\caption*{#1}}
+
+%-------------------------------------------------------
+% CONFIG
+
+\graphicspath{{./figs/}}
+
+
+%-------------------------------------------------------
+% PRE-TEXT CONTENT
+
+\title{Assessing Default Probabilities in Subnational Governments: The Case of Brazil}
+\author{Francisco Alves}
+\date{2017}
+
+%-------------------------------------------------------
+% TEXT BODY CONTENT
+
+\begin{document}
+
+\maketitle
+
+\input{tex/01_introduction}
+\input{tex/02_literature-review}
+\input{tex/03_methods}
+\input{tex/04_results}
+\input{tex/05_discussion}
+
+%-------------------------------------------------------
+% POST-TEXT CONTENT
+
+
+\bibliographystyle{agsm}
+{\footnotesize
+\bibliography{../references.bib}}
+
+\end{document}
+

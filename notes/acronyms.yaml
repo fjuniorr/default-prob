@@ -1,0 +1,174 @@
+MDF: 
+  name: Manual de Demonstrativos Fiscais
+  url:
+  tags: standard
+
+NBCASP: 
+  name: Normas Brasileiras de Contabilidade Aplicadas ao Setor Público
+  url: 
+  tags: standard
+
+CFC: 
+  name: Conselho Federal de Contabilidade
+  url: 
+  tags: organization
+
+MCASP: 
+  name: Manual de Contabilidade Aplicada ao Setor Público
+  url: 
+  tags: standard
+
+PCASP: 
+  name: Plano de Contas Aplicado ao Setor Público
+  url: 
+  tags: standard
+
+DCASP: 
+  name: Demonstrações Contábeis Aplicadas ao Setor Público
+  url: 
+  tags: standard
+
+CDP: 
+  name: Cadastro da Dívida Pública
+  url: 
+  tags: report
+
+COC:
+  name: Cadastro de Operações de Crédito
+  url:
+  tags: report  
+
+QDCC: 
+  name: Quadro de Dados Contábeis Consolidados
+  url: 
+  tags: report
+
+DCA: 
+  name: Declaração das Contas Anuais
+  url: 
+  tags: report
+
+RREO: 
+  name: Relatório Resumido da Execução Orçamentária
+  url: 
+  tags: report
+
+RGF: 
+  name: Relatório de Gestão Fiscal
+  url: 
+  tags: report
+
+SISTN: 
+  name: Sistema de Coleta de Dados Contábeis dos Entes da Federação
+  url: 
+  tags: software
+
+SADIPEM: 
+  name: Sistema de Análise da Dívida Pública, Operações de Crédito e Garantias da União, Estados e Municípios
+  url: 
+  tags: software
+
+SICONFI: 
+  name: Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro
+  url: 
+  tags: software
+
+GFS: 
+  name: Government Finance Statistics
+  url: 
+  tags: [standard, statistics]
+
+PSDS: 
+  name: Public Sector Debt Statistics
+  url: 
+  tags: standard
+
+SNA: 
+  name: System of National Accounts
+  url: 
+  tags: standard
+
+IFRS: 
+  name: International Financial Reporting Standards
+  url: 
+  tags: standard
+
+IASB: 
+  name: International Accounting Standards Board
+  url: 
+  tags: organization
+
+IPSAS: 
+  name: International Public Sector Accounting Standards
+  url: 
+  tags: standard
+
+IPSASB: 
+  name: International Public Sector Accounting Standards Board
+  url: 
+  tags: organization
+
+IFAC: 
+  name: International Federation of Accountants
+  url: 
+  tags: organization
+
+ISDA:
+  name: International Swaps and Derivatives Association
+  url:
+  tags: organization
+
+BIS:
+  name: Bank for International Settlements
+  url:
+  tags: organization
+
+MSC: 
+  name: Matriz de Saldos Contábeis
+  url: 
+  tags: 
+
+SDMX : 
+  name: Statistical Data and Metadata eXchange
+  url: 
+  tags: technology
+
+XBRL: 
+  name: eXtensible Business Reporting Language
+  url: 
+  tags: technology
+
+CKAN : 
+  name: Comprehensive Knowledge Archive Network
+  url: 
+  tags: software
+
+REST: 
+  name: Representational State Transfer
+  url: 
+  tags: framework
+
+API: 
+  name: Application Programming Interface
+  url: 
+  tags: framework
+
+XML: 
+  name: eXtensible Markup Language
+  url: 
+  tags: technology
+
+JSON: 
+  name: JavaScript Object Notation
+  url: 
+  tags: technology
+
+YAML: 
+  name: YAML Ain’t Markup Language
+  url: 
+  tags: technology
+
+CSV: 
+  name: Comma-separated values
+  url: 
+  tags: technology
