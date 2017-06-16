@@ -3,8 +3,9 @@ title: "Feynman Notebook"
 output:
   html_document:
     theme: united
+    toc: yes
 ---
-**Structure**
+**First Meeting**
 ==============================================
 <a href="#top">(back to top)</a>
 
@@ -14,39 +15,44 @@ Can the compilation of fiscal variables in accordance with the GFSM2014 be consi
 
 I was in touch with the researcher who is leading the publication of GFS for the Brazilian government and they do not intend to publish detailed information for individual SGNs.
 
-% In order to better grasp the problems related to the comprehensiveness and quality of the data, a few details of the evolution of the Brazilian fiscal reporting system are of great assistance.  However 
+Relevant events
 
-% Relevant events
+- MP n. 434 1994-02-27
+- Fiscal Responsibility Law 2000-05-04
+- Change of Economic Classification 2001-05-04
+- Information Systems
 
-% - MP n. 434 1994-02-27
-% - Fiscal Responsibility Law 2000-05-04
-% - Change of Economic Classification 2001-05-04
-% - Information Systems
+Dimensions
 
-% Dimensions
+- Currency
+- Real vs Nominal
+- Stock vs Flow
+- Accrual vs Cash
 
-% - Currency
-% - Real vs Nominal
-% - Stock vs Flow variables
-% - Accrual vs Cash
-
-% - Why market data is not relevant in this case (see risk octagon and nota tecnica STN)
+Market data is not relevant in this case (see risk octagon and nota tecnica STN)
 
 ### issue - Aims/Objectives of the Study
 
-% Payment Capacity Evaluation Methodology (CAPAG) used by the National Treasury Secretariat (STN) to assess the solvency of subnational governments in Brazil, both states and municipalities, in borrowing operations where the federal government needs to provide debt guarantees for the creditors.
+The Payment Capacity Evaluation Methodology (CAPAG) used by the National Treasury Secretariat (STN) to assess the solvency of subnational governments in Brazil, both states and municipalities, in borrowing operations where the federal government needs to provide debt guarantees for the creditors.
 
-% \begin{enumerate}
-% \item to assess the extent to which analytical instruments commonly used for risk management in the financial sector can fruitfly be employed in the public sector for the management of fiscal risks originating from contigent liabilities that arises from intergovernmental fiscal relations;
-% \item to identify financial ratios/fiscal indicators relevant for the analysis of fiscal sustainability that take into account 
-%   \begin{enumerate}
-%   \item the specificities of the public sector as opposed to the private sector
-%   \item the characteristics of subnational governments as opposed to national governments
-%   \end{enumerate}
-% \item to employ econometric techniques that are able to address the more relevant statistical characteristics of the problems, namely, 
-% \end{enumerate}
+My aim could be either to
 
-### issue - Definition of fiscal sustainability
+- assess the payment capacity methodology used by STN
+- propose a payment capacity methodology
+
+If it is the second, then the following becomes important
+
+- to assess the extent to which analytical instruments commonly used for risk management in the financial sector can fruitfly be employed in the public sector for the management of fiscal risks originating from contigent liabilities that arises from intergovernmental fiscal relations;
+- to identify financial ratios/fiscal indicators relevant for the analysis of fiscal sustainability that take into account 
+    - the specificities of the public sector as opposed to the private sector
+    - the characteristics of subnational governments as opposed to national governments
+- to identify other explanatory variables relevant for the case at hand
+
+### issue - Scope of literature review 
+
+My understanding is that on Early Warning Systems and on the Brazil Fiscal Framework I need to go into some depth. But kind of lost about the other topics
+
+#### Fiscal sustainability
 
 I've put a section on fiscal sustainability in the outline, but how much should I actually pursuit there.
 
@@ -54,7 +60,43 @@ I've put a section on fiscal sustainability in the outline, but how much should 
 
 - fiscal sustainability - government’s ability to indefinitely maintain the same set of policies while remaining solvent
 
+#### Fiscal risks
+
+Management (the overall vision)
+
+Tools (need to look at finance literature?)
+
+### issue - Data Constrains
+
+Municipalities are straight out of the question because of data quality concerns.
+
+The original period is 1986 through 2016, totalling 31 years of data (837 obs) with debt reestructuring in 1989, 1993 and 1997-2000 giving 81 events plus 3 (RJ, MG and RS) events in 2016. 
+
+- 1986-1994
+    - hyperinflation and 
+    - currency change
+
+- 1995-2001
+    - FRL
+    - flow variables
+    - change in economic classification
+
+- 2002-2005
+    - reports are not centralized
+
+- 2002-2007
+    - debt service is not on an acrual basis
+
+Final period is 2008-2016 which gives 9 years, 243 observations and 3 events (3/243 = 1.23%)
+
 ### issue - What to do if things go wrong
+
+Two types of "bad results"
+
+- I can't define meaninful variables or the quality is very bad
+- no variable show a significant sign
+
+In the first case just explain the limitations. In the second case, is this a problem from an academic point of view?
 
 ### issue - Timeline
 
@@ -63,13 +105,16 @@ I've put a section on fiscal sustainability in the outline, but how much should 
 
 ### issue - Statistical characteristics of fiscal crisis
 
-% \item the fact that default and debt reestructuring episodes are rare events
-% \item the fact that default risks are positively correlated
-% \item the fact that equating debt reestructuring, default, and debt relief episodes create possibilities of misclassified outcomes
-% \item the decision-theorethic nature of the problem faced by the National Treasury Secretariat
-% \item the importance of incorporating non-statistical information in the assessment of fiscal sustainability
-% \item the strong multicolinearity expected between the explanatory variables owing to the nature of the financial ratios/fiscal indicators
-% \item the panel structure of the dataset
+Ideally, the econometric techniques should be able to address or/and take advantage od the more relevant statistical characteristics of the problems, namely
+
+1. the fact that default and debt reestructuring episodes are rare events (rare events)
+2. the fact that the disturbances are most likely correlated between states (?)
+3. the fact that defining and identifiyng the event of interest (debt reestructuring, default, and debt relief episodes) create possibilities of misclassified outcomes (error in variables)
+4. the fact that the dependent variable might be better defined as not binary (ordered logit)
+5. the panel structure of the dataset (fixed effect logit)
+6. the strong multicolinearity expected between the explanatory variables owing to the nature of the financial ratios/fiscal indicators (factor analysis)
+7. the importance of incorporating non-statistical information in the assessment of fiscal sustainability (bayesian analysis)
+8. the decision-theorethic nature of the problem faced by the National Treasury Secretariat since the loss function depends on the size of the guarantee (bayesian analysis)
 
 ### issue - Bayesian Analysis
 
