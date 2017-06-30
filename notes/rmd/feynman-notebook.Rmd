@@ -5,7 +5,7 @@ output:
     theme: united
     toc: yes
 ---
-**First Meeting**
+**Issues**
 ==============================================
 <a href="#top">(back to top)</a>
 
@@ -48,61 +48,6 @@ If it is the second, then the following becomes important
     - the characteristics of subnational governments as opposed to national governments
 - to identify other explanatory variables relevant for the case at hand
 
-### issue - Scope of literature review 
-
-My understanding is that on Early Warning Systems and on the Brazil Fiscal Framework I need to go into some depth. But kind of lost about the other topics
-
-#### Fiscal sustainability
-
-I've put a section on fiscal sustainability in the outline, but how much should I actually pursuit there.
-
-- debt sustainability or solvency - government’s ability to service its debt obligations without explicitly defaulting on them
-
-- fiscal sustainability - government’s ability to indefinitely maintain the same set of policies while remaining solvent
-
-#### Fiscal risks
-
-Management (the overall vision)
-
-Tools (need to look at finance literature?)
-
-### issue - Data Constrains
-
-Municipalities are straight out of the question because of data quality concerns.
-
-The original period is 1986 through 2016, totalling 31 years of data (837 obs) with debt reestructuring in 1989, 1993 and 1997-2000 giving 81 events plus 3 (RJ, MG and RS) events in 2016. 
-
-- 1986-1994
-    - hyperinflation and 
-    - currency change
-
-- 1995-2001
-    - FRL
-    - flow variables
-    - change in economic classification
-
-- 2002-2005
-    - reports are not centralized
-
-- 2002-2007
-    - debt service is not on an acrual basis
-
-Final period is 2008-2016 which gives 9 years, 243 observations and 3 events (3/243 = 1.23%)
-
-### issue - What to do if things go wrong
-
-Two types of "bad results"
-
-- I can't define meaninful variables or the quality is very bad
-- no variable show a significant sign
-
-In the first case just explain the limitations. In the second case, is this a problem from an academic point of view?
-
-### issue - Timeline
-
-- Prefer to receive a full draft or drafts of specific chapters?
-- Two weeks out and hope to finish by the end of August which gives 10 weeks roughly
-
 ### issue - Statistical characteristics of fiscal crisis
 
 Ideally, the econometric techniques should be able to address or/and take advantage od the more relevant statistical characteristics of the problems, namely
@@ -116,16 +61,3 @@ Ideally, the econometric techniques should be able to address or/and take advant
 7. the importance of incorporating non-statistical information in the assessment of fiscal sustainability (bayesian analysis)
 8. the decision-theorethic nature of the problem faced by the National Treasury Secretariat since the loss function depends on the size of the guarantee (bayesian analysis)
 
-### issue - Bayesian Analysis
-
-The Time Has Come: Bayesian Methods for Data Analysis in the Organizational Sciences by John K. Kruschke
-
-### issue - Personal Experience at Fiscal Council
-
-- size of staff
-- routine
-- relationships at 
-    + technical level with staff from other departments
-    + executive level with other deparments
-    + political level with other institutions
-- effectiveness and impact

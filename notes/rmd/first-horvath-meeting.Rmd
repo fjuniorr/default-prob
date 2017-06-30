@@ -1,0 +1,53 @@
+---
+title: "First Meeting - Michael Horvath"
+output:
+  html_document:
+    theme: united
+    toc: yes
+---
+**First Meeting**
+==============================================
+<a href="#top">(back to top)</a>
+
+# Objectives of the study
+
+- Publication of datasets is a valid objective, could even be a whole article
+- Start with the objective to test the fiscal indicators of the STN methodology
+- Improve by constructing a better methodology
+
+# Fiscal sustainability
+
+Choose an definition of fiscal sustainability that is most closely related to the one that will actually be pursued in the empirical analysis
+
+# Alternative Methodology
+
+An possible alternative is to use cluster analysis to group the countries togheter.
+
+Cluster Analysis
+- Identify homogeneous subgroups of objects in a population,
+
+ANOVA
+- Determine if variables are different between groups/clusters.
+
+Logistic Regression
+- Determine how the variables best discriminate between given
+clusters of objects.
+
+Factor analysis
+- Identify “clusters” of variables.
+
+# Estimation of Interest rates
+
+Division of interest paid by debt gives an estimate of interest rate
+
+# Rare Disasters
+
+Take a closer look at the Rare Disasters articles by Robert Barro
+
+# Personal Experience at Fiscal Council
+
+The staff was small, about 12 people. 
+
+It worked with respect to the fact that the Finance Minister felt that someone was watching, that changes the incentives for all sorts of fiscal gimmickry that individually may be small but add up to a lot and threathens fiscal transparency. The second aspect that it worked is that it creates a pressure for the modernization of the finance ministry to keep up with the technical progress of the fiscal council. The way that it didn't work is to be able to acctualy counter the deficit bias.
+
+Initially the clash was focused on the political level, but eventually that filtered down to the staff level in the sharing of information.
