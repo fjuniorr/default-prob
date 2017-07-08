@@ -1,0 +1,91 @@
+-	
+	name: Despesa Bruta com Pessoal
+	id: dbp
+-
+	name: Despesa Total com Pessoal
+	id: dtp
+-
+	name: Pessoal Ativo
+	id: ativos
+-
+	name: Pessoal Inativo e Pensionistas
+	id: inativos
+-
+	name: Contratos
+	id: contratos
+-
+	name: Dívida Consolidada Bruta
+	id: dcb
+-
+	name: Dívida Consolidada Líquida
+	id: dcl
+-
+	name: Juros e Encargos da Dívida
+	id: 
+-
+	name: Amortização da Dívida
+	id: 
+-	
+	name: Receita Corrente Líquida
+	id: rcl
+-
+	name: Receita Primária
+	id: rec_primaria
+-
+	name: Receita Primária Corrente
+	id: rec_primaria_cor
+-
+	name: Receita Primária de Capital
+	id: rec_primaria_cap
+-
+	name: Despesa Primária Corrente Liquidada
+	id: desp_primaria_cor_liq
+-
+	name: Despesa Primária Corrente Empenhada
+	id: desp_primaria_cor_emp
+-
+	name: Despesa Primária de Capital Liquidada
+	id: desp_primaria_cap_liq
+-
+	name: Despesa Primária de Capital Empenhada
+	id: desp_primaria_cap_emp
+-
+	name: Resultado Primário
+	id: primario
+-
+	name: Resultado Nominal
+	id: nominal
+-
+	name: Despesa com Pessoal e Encargos Sociais
+	id:
+-
+	name: Receitas Correntes
+	id: 				
+-
+	name: Despesas Correntes
+	id: 	
+-
+	name: Investimentos
+	id: 		
+-
+	name: Despesa Total
+	id: 			
+-
+	name: Receitas Previdenciárias
+	id: 				
+-
+	name: Despesas Previdenciárias
+	id: 					
+-
+	name: Receitas Tributárias
+	id: 						
+-
+	name: Despesas de Custeio
+	id: 						
+-
+	name: Obrigações Financeiras
+	id: 
+-
+	name: Disponibilidade de Caixa Bruta
+	id: 		
+	

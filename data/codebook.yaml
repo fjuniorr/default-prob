@@ -64,7 +64,7 @@ period: 2014-2016
 source: SADIPEM
 url: https://sadipem.tesouro.gov.br
 
-dataset: Estatísticas Fiscais Regionalizadas
+dataset: Dívida Líquida e Necessidades de Financiamento do Setor Público - Estatísticas Fiscais Regionalizadas
 period: 2008-2016
 source: BACEN
 url: http://www.bcb.gov.br/htms/Infecon/serieHistEstatFR.asp
