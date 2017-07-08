@@ -25,7 +25,7 @@ get_value <- function(x, filetype) {
 }
 
 # convert string to numeric
-to_numeric <- function(x) {
+to_numeric <- function(x, min_value = 1000) {
     value <- stringr::str_replace_all(x, stringr::fixed(" "), "") %>% 
         stringr::str_replace_all("\\.", "") %>% 
         stringr::str_replace(",", ".") %>% 
@@ -35,7 +35,7 @@ to_numeric <- function(x) {
     ret <- NA_real_
     
     if(length(value) == 1) {
-        if(ifelse(is.na(value), 0, abs(value)) > 1000) {
+        if(ifelse(is.na(value), 0, abs(value)) >= min_value) {
             ret <- value   
         }
     }

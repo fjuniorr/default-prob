@@ -11,8 +11,11 @@
 	name: Pessoal Inativo e Pensionistas
 	id: inativos
 -
-	name: Contratos
+	name: Outras Despesas de Pessoal decorrentes de Contratos de Terceirização
 	id: contratos
+-
+	name: Despesas de Pessoal Não Computadas
+	id: deducao_pessoal
 -
 	name: Dívida Consolidada Bruta
 	id: dcb
@@ -20,12 +23,9 @@
 	name: Dívida Consolidada Líquida
 	id: dcl
 -
-	name: Juros e Encargos da Dívida
-	id: 
+	name: Dívida Fiscal Líquida
+	id: dcl
 -
-	name: Amortização da Dívida
-	id: 
--	
 	name: Receita Corrente Líquida
 	id: rcl
 -
@@ -56,6 +56,21 @@
 	name: Resultado Nominal
 	id: nominal
 -
+	name: Disponibilidade de Caixa Bruta
+	id: disp_caixa
+-
+	name: Receitas Previdenciárias
+	id: 				
+-
+	name: Despesas Previdenciárias
+	id: 					
+-
+	name: Obrigações Financeiras
+	id: 
+-
+
+
+-
 	name: Despesa com Pessoal e Encargos Sociais
 	id:
 -
@@ -71,21 +86,15 @@
 	name: Despesa Total
 	id: 			
 -
-	name: Receitas Previdenciárias
-	id: 				
--
-	name: Despesas Previdenciárias
-	id: 					
--
 	name: Receitas Tributárias
 	id: 						
 -
 	name: Despesas de Custeio
 	id: 						
 -
-	name: Obrigações Financeiras
+	name: Juros e Encargos da Dívida
 	id: 
 -
-	name: Disponibilidade de Caixa Bruta
-	id: 		
-	
+	name: Amortização da Dívida
+	id: 
+-	

@@ -1,5 +1,5 @@
 library(magrittr)
-source("code/R/lib/parsers.R"); source("code/R/lib/parsers_dbp.R")
+source("code/R/lib/parsers.R"); source("code/R/lib/parsers_deducao_pessoal.R")
 # ==========================================================
 # scripted data collection
 # ==========================================================
@@ -10,7 +10,7 @@ DF <- list.files("data-raw/rgf/", full.names = TRUE) %>%
 # ==========================================================
 # manual data collection
 # ==========================================================
-manual <- readxl::read_excel("data/manual/dbp.xlsx")
+manual <- readxl::read_excel("data/manual/deducao_pessoal.xlsx")
 
 stopifnot(anyDuplicated(manual$id) == 0)
 index <- match(DF$id, manual$id) %>% .[!is.na(.)]
@@ -22,4 +22,4 @@ DF[match(rows, DF$id), "value"] <- values
 # ==========================================================
 # save
 # ==========================================================
-write.csv(DF, "data/munged/dbp.csv", row.names = FALSE)
+write.csv(DF, "data/munged/deducao_pessoal.csv", row.names = FALSE)
