@@ -42,3 +42,15 @@ to_numeric <- function(x, min_value = 1000) {
     
     ret
 }
+
+replace_values <- function(data, path) {
+    
+    manual <- readxl::read_excel("data/manual/dcl.xlsx")
+    stopifnot(anyDuplicated(manual$id) == 0)
+    index <- match(data$id, manual$id) %>% .[!is.na(.)]
+    values <- manual[index, "value"] %>% unlist()
+    rows <- manual[index, "id"] %>% unlist()
+    data[match(rows, data$id), "value"] <- values
+    
+    data
+}
