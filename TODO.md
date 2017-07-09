@@ -1,6 +1,17 @@
 Task List
 ===
 
+[ ] Change implementation of the following parsers to match dcl
+    [ ] dbp
+    [ ] ativos
+    [ ] contratos
+    [ ] inativos
+    [ ] deducao_pessoal
+    [ ] dtp
+    [ ] dcb
+    [ ] rcl
+    [ ] primario
+    
 [ ] Date defaults years in SNG
 
 [ ] Check level of detail of available datasets 
