@@ -14,6 +14,8 @@ DT <- pmap(list(l, col_names), set_names) %>%
         reduce(full_join, by = index) %>% 
         as.data.table()
 
+w(DT)
+
 #===========================================
 
 DT[, dbp_check := ativos + inativos + contratos]
