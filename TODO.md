@@ -14,7 +14,7 @@ Task List
     
 [ ] Date defaults years in SNG
 
-[ ] Check level of detail of available datasets 
+[x] Check level of detail of available datasets 
 
 [ ] Training a credit scoring model without enough observations
 

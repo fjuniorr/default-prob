@@ -16,7 +16,7 @@ period <- paste(rep(months, length(years)),
 
 # ==========================================================
 wks_stock <- c(net_debt_bacen = "Dívida líquida _PorRegiao")
-path_stock <- file.path("data/munged", paste0(names(wks_stock), ".csv")) 
+path_stock <- file.path("data/munged", paste0("fisregp-", names(wks_stock), ".csv")) 
 rng_stock <- "A11:AM153"
 col_names_stock <- c("label", "empty", "dez_2007", period)
 raw_DF_stock <- readxl::read_excel(path, 
@@ -41,7 +41,7 @@ wks_flows <- c(primario_bacen = "Primário",
                juros_bacen = "Juros", 
                nominal_bacen = "Nominal", 
                other_flows_bacen = "Outros_fluxos")
-path_flows <- file.path("data/munged", paste0(names(wks_flows), ".csv")) 
+path_flows <- file.path("data/munged", paste0("fisregp-", names(wks_flows), ".csv")) 
 rng_flows <- "A11:AL153"
 col_names_flows <- c("label", "empty", period)
 

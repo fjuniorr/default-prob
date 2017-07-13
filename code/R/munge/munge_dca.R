@@ -1,14 +1,28 @@
-library(readr); library(purrr)
+library(tidyverse); library(stringr)
 
-path <- "data-raw/QDCC/"
+col_names <- c("instituicao", "ibge", "uf", "populacao", "coluna", "conta", "value")
+col_types <- c("character", "integer", "character", "numeric", "character", "character", "numeric")
+
+l <- list.files("data-raw/dca/", recursive = TRUE, full.names = TRUE) %>% 
+    str_subset("DespesasOrcamentarias")
+
+
+p <- unzip(l[[2]], exdir = "data-raw/dca/")
+
+annex <- read.csv2(file = p, 
+                   encoding = "latin1",
+                   stringsAsFactors = FALSE,
+                   header = FALSE,
+                   skip = 4,
+                   col.names = col_names,
+                   colClasses = col_types)
+
+# ==========================================================
+# 
+# ==========================================================
+
+path <- "data-raw/dca/2014/"
 files <- list.files(path)
-
-col_names <- c("state_name", "ibge_code", "state_code", "state_pop", "date", "account", "value")
-col_types <- c("character", "integer", "character", "numeric", "Date", "character", "numeric")
-
-# for (year in years) {
-#     for(annex in annexes)
-# }
 
 
 file <- files[[1]]

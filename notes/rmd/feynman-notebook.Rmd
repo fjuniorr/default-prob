@@ -9,6 +9,12 @@ output:
 ==============================================
 <a href="#top">(back to top)</a>
 
+### issue - Net revenue and transfers to municipalities
+
+Not every state uses the accounting procedure to treat constitucional transfers to municipalities as a revenue deduction and instead register an expense. 
+
+This can create problems for comparing current revenue.
+
 ### issue - GFSM 2014 Fiscal variables
 
 Can the compilation of fiscal variables in accordance with the GFSM2014 be considered one of the aims of the dissertation? Is this a valid academic objective?
