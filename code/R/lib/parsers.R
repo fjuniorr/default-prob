@@ -53,6 +53,8 @@ get_value <- function(x, filetype) {
 as_numeric <- function(x) {
     
     stringr::str_trim(x) %>% 
+    stringr::str_replace_all("\\s+\\.", ".") %>% 
+    stringr::str_replace_all("\\.\\s+", ".") %>% 
     stringr::str_replace("\\b\\s.*", "") %>%
     stringr::str_replace_all("\\s", "") %>% 
     stringr::str_replace_all("\\.", "") %>% 
