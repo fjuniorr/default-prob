@@ -55,7 +55,7 @@ as_numeric <- function(x) {
     stringr::str_trim(x) %>% 
     stringr::str_replace_all("\\s+\\.", ".") %>% 
     stringr::str_replace_all("\\.\\s+", ".") %>% 
-    stringr::str_replace("\\b\\s.*", "") %>%
+    stringr::str_replace("(,.*)(\\b\\s.*)", "\\1") %>%
     stringr::str_replace_all("\\s", "") %>% 
     stringr::str_replace_all("\\.", "") %>% 
     stringr::str_replace(",", ".") %>% 
