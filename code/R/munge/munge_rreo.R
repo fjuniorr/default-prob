@@ -1,19 +1,14 @@
 library(magrittr)
 source("code/R/lib/parsers.R")
 
-# DOING
-
 munge(stem = "rec_primaria", report = "rreo")
-
-# TO REFACTOR
-
-
 munge(stem = "rec_primaria_cor", report = "rreo")
 munge(stem = "rec_primaria_cap", report = "rreo")
+munge(stem = "primario", report = "rreo")
+munge(stem = "dcl", report = "rreo")
 munge(stem = "dfl", report = "rreo")
-munge(stem = "disp_caixa", report = "rreo")
 munge(stem = "nominal", report = "rreo")
-
+munge(stem = "disp_caixa", report = "rreo")
 
 # TODO
 

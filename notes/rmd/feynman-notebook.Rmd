@@ -67,3 +67,33 @@ Ideally, the econometric techniques should be able to address or/and take advant
 7. the importance of incorporating non-statistical information in the assessment of fiscal sustainability (bayesian analysis)
 8. the decision-theorethic nature of the problem faced by the National Treasury Secretariat since the loss function depends on the size of the guarantee (bayesian analysis)
 
+### issue - Numerical Properties of OLS
+
+- What is the interpretation of the estimator $b = (X'X)^{-1}X'y$?
+- What are the influence measures available at `r ?influence.measures`
+- Properties Frisch-Waugh-Lovell Theorem (see Heij and Davidson pg. 64)
+
+
+### issue - Standardized Regression Model
+
+- Reparametrization of statistical models
+
+gelman2007, pg. 53
+gujarati2002, pg. 213
+wooldrigde2015, pg. 166
+kutner2004, pg 273
+
+### issue - Fixed Effects
+
+- Within transformation
+- Correlation without differencing
+- Stochastic vs Deterministic trends
+- Unit Roots
+
+
+### issue - Functions of Random Variables
+
+- Transformations of Random Variables
+- Location-scale transformations
+
+### issue - Exchangeability

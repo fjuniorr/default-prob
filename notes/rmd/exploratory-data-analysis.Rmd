@@ -1,0 +1,78 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(modelr)
+```
+
+## R Markdown
+
+```{r, eval=FALSE}
+DT$desp_primaria_cor_dv %>% quantile() %>% formattable::accounting()
+
+DT %>%
+    ggplot(aes(year, desp_total, group = state)) +
+    geom_line(alpha = 1/3)
+
+
+by_state <- DT %>%
+    group_by(state, region) %>%
+    nest()
+
+
+state_model <- function(df) {
+    lm(desp_total ~ year, data = df)
+}
+
+by_state <- by_state %>% 
+                mutate(model = map(data, state_model))
+
+
+by_state <- by_state %>%
+    mutate(resids = map2(data, model, add_residuals))
+
+resids <- unnest(by_state, resids)
+
+resids %>%
+    ggplot(aes(year, resid)) +
+    geom_line(aes(group = state), alpha = 1 / 3) +
+    geom_smooth(se = FALSE)
+
+
+resids %>%
+    ggplot(aes(year, resid, group = state)) +
+    geom_line(alpha = 1 / 3) +
+    facet_wrap(~region) 
+
+
+resids %>%
+    filter(region == "sudeste") %>% 
+    ggplot(aes(year, resid, group = state)) +
+    geom_line(alpha = 1 / 3) +
+    facet_wrap(~state) 
+
+glance <- by_state %>%
+            mutate(glance = map(model, broom::glance)) %>%
+            unnest(glance, .drop = TRUE)
+
+glance %>% 
+    arrange(r.squared)
+
+
+glance %>%
+    ggplot(aes(region, r.squared)) +
+    geom_jitter(width = 0.5)
+
+
+bad_fit <- filter(glance, r.squared < 0.8)
+semi_join(DT, bad_fit, by = "state") %>%
+    ggplot(aes(year, desp_total, color = state)) +
+    geom_line()
+
+
+
+```
+

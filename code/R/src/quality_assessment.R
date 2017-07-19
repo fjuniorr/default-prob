@@ -1,10 +1,11 @@
 library(tidyverse); library(data.table); library(broom); library(formattable)
 source("code/R/lib/parsers.R")
-source("code/R/lib/parsers_nominal.R")
+source("code/R/lib/parsers_primario.R")
 # ==========================================================
 # testing - single file
 
-x <- "data-raw/rreo/2008_ba_rreo.pdf"
+x <- "data-raw/rreo/2013_go_rreo.pdf"
+x <- "data-raw/rreo/2015_pr_rreo.xls"
 
 x %>% get_record()
 

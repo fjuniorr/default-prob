@@ -8,19 +8,18 @@ DT <- rbind(DT_qdcc, DT_dca)
 # export variables of interest
 # ==========================================================
 pkey <- c("id", "state", "year")
-
+# ==========================================================
 rec_cor <- quote(desc == "RECEITAS CORRENTES" & str_sub(cod, 1, 1) != "9")
-
 DT[eval(rec_cor),.N, by = c("cod", "desc", "year")] 
-
 DT[eval(rec_cor), .(value = sum(value)), by = pkey] %>% write_csv("data/munged/finbra-rec_cor.csv")
-
+# ==========================================================
 rec_tributaria <- quote(desc == "RECEITA TRIBUTARIA" & str_sub(cod, 1, 1) != "9")
-
 DT[eval(rec_tributaria),.N, by = c("cod", "desc", "year")]
-
 DT[eval(rec_tributaria), .(value = sum(value)), by = pkey] %>% write_csv("data/munged/finbra-rec_tributaria.csv")
-
+# ==========================================================
+rec_rpps <- quote(desc == "CONTRIBUICOES SOCIAIS" & str_sub(cod, 1, 1) != "9")
+DT[eval(rec_rpps),.N, by = c("cod", "desc", "year")]
+DT[eval(rec_rpps), .(value = sum(value)), by = pkey] %>% write_csv("data/munged/finbra-rec_rpps.csv")
 # ==========================================================
 # manual data cleaning
 # ==========================================================

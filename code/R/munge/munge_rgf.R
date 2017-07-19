@@ -1,24 +1,13 @@
 library(magrittr)
 source("code/R/lib/parsers.R")
 
-# DOING
+munge(stem = "rcl", report = "rgf")
 
+munge(stem = "dbp", report = "rgf")
+munge(stem = "ativos", report = "rgf")
+munge(stem = "contratos", report = "rgf")
+munge(stem = "inativos", report = "rgf")
+munge(stem = "deducao_pessoal", report = "rgf")
+munge(stem = "dtp", report = "rgf")
 
-
-# TODO
-
-munge(stem = "desp_primaria_cor_liq", report = "rreo")
-munge(stem = "desp_primaria_cor_emp", report = "rreo")
-munge(stem = "desp_primaria_cap_liq", report = "rreo")
-munge(stem = "desp_primaria_cap_emp", report = "rreo")
-
-# DONE
-
-munge(stem = "rec_primaria", report = "rreo")
-munge(stem = "rec_primaria_cor", report = "rreo")
-munge(stem = "rec_primaria_cap", report = "rreo")
-munge(stem = "dfl", report = "rreo")
-munge(stem = "disp_caixa", report = "rreo")
-munge(stem = "nominal", report = "rreo")
-
-# TO REFACTOR
+munge(stem = "dcb", report = "rgf")
