@@ -114,41 +114,47 @@ DT[, capag_il := dfl / disp_caixa] # using dfl instead of obrig_fin
 
 #===========================================
 
-col_order <- c(
-    "id", "state", "year", "default",
-    #===========================================
-    # state variables
-    "region",
-    #===========================================
-    # revenue
-    "rec_cor", "rec_tributaria", "rec_rpps", "rcl",
-    "rec_primaria", "rec_primaria_dv", "rec_primaria_cor", "rec_primaria_cap",
-    #===========================================
-    # expense
-    "desp_total", "desp_total_dv", "desp_cor", "desp_cor_dv", "pessoal", "juros", "custeio",
-    "desp_cap", "desp_cap_dv",
-    "investimentos", "inv_fin", "aquisicao_titulos", "concessao_emprestimos", "amortizacao",
-    "desp_previdencia",
-    "desp_primaria_cor_dv", "desp_primaria_cap_dv", "desp_primaria_dv", "primario", "primario_dv",
-    "dbp", "dbp_dv", "ativos", "contratos", "inativos", "deducao_pessoal", "dtp", "dtp_dv",
-    #===========================================
-    # assets and liabilities
-    "dcb", "dcl", "dfl", "nominal", "disp_caixa", #"obrig_fin",
-    # below the line
-    "net_debt_bacen", "juros_bacen", "primario_bacen", "nominal_bacen", "other_flows_bacen",
-    #===========================================
-    # memo items
-    "gdp", "pop", "ipca", "inpc", "igp_di",
-    #===========================================
-    # fiscal indicators
-    "stn_end", "stn_sdrcl", "stn_rpsd", "stn_dprcl", "stn_cgpp", "stn_pidt", "stn_pcrdp", "stn_rtdc",
-    "capag_idc", "capag_pc", "capag_il"
-    )
+pkey <- c("id", "state", "year")
+
+others <- c("default","region", "gdp", "pop", "ipca", "inpc", "igp_di")
+
+revenue <- c("rec_cor", "rec_tributaria", "rec_rpps", "rcl",
+             "rec_primaria", "rec_primaria_dv", "rec_primaria_cor", "rec_primaria_cap")
+
+expense <- c("desp_total", "desp_total_dv", "desp_cor", "desp_cor_dv", "pessoal", "juros", "custeio",
+             "desp_cap", "desp_cap_dv",
+             "investimentos", "inv_fin", "aquisicao_titulos", "concessao_emprestimos", "amortizacao",
+             "desp_previdencia",
+             "desp_primaria_cor_dv", "desp_primaria_cap_dv", "desp_primaria_dv", "primario", "primario_dv",
+             "dbp", "dbp_dv", "ativos", "contratos", "inativos", "deducao_pessoal", "dtp", "dtp_dv")
+    
+stocks <- c("dcb", "dcl", "dfl", "nominal", "disp_caixa") #"obrig_fin"
+    
+bacen <- c("net_debt_bacen", "juros_bacen", "primario_bacen", "nominal_bacen", "other_flows_bacen")
+    
+stn <- c("stn_end", "stn_sdrcl", "stn_rpsd", "stn_dprcl", "stn_cgpp", "stn_pidt", "stn_pcrdp", "stn_rtdc")
+    
+capag <- c("capag_idc", "capag_pc", "capag_il")
+
+col_order <- c(pkey, others, revenue, expense, stocks, bacen, stn, capag)
 
 setdiff(col_order, names(DT))
 setdiff(names(DT), col_order)
 
 setcolorder(DT, col_order)
+
+# ==========================================================
+# change units to millions
+# ==========================================================
+
+to_millions <- function(x) {
+    x / 1000000
+}
+
+for (col in c("gdp", revenue, expense, stocks, bacen)) {
+    set(DT, j = col, value = to_millions(DT[[col]]))
+}
+    
 
 #===========================================
 
