@@ -1,6 +1,8 @@
 Task List
 ===
 
+[ ] Implement fiscal indicators using spreasheet
+
 [ ] Change implementation of the following parsers to match dcl
     [ ] dbp
     [ ] ativos
