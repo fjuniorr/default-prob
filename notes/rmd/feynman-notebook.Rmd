@@ -9,6 +9,10 @@ output:
 ==============================================
 <a href="#top">(back to top)</a>
 
+### issue - Moral hazard in SGN borrowing in Brazil
+
+Can the moral hazard not exist in Brazil? The SGN are either borrowing from Banco do Brasil, BNDES or external debt. In the first two cases the central government would intervene, in the third it acts as guarantitor.
+
 ### issue - Net revenue and transfers to municipalities
 
 Not every state uses the accounting procedure to treat constitucional transfers to municipalities as a revenue deduction and instead register an expense. 
@@ -96,4 +100,16 @@ kutner2004, pg 273
 - Transformations of Random Variables
 - Location-scale transformations
 
+https://www.otexts.org/fpp/2/4
+https://people.duke.edu/~rnau/411infla.htm
+
 ### issue - Exchangeability
+
+
+### issue - Time trend vs time dummies
+
+https://stats.stackexchange.com/questions/92243/time-trend-or-time-dummies-in-a-panel
+
+https://www.otexts.org/fpp/5/2
+
+http://highered.mheducation.com/sites/dl/free/0077104285/160071/Chapter_7.pdf

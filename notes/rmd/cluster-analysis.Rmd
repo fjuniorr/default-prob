@@ -1,0 +1,12 @@
+---
+title: "Cluster Analysis"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+# References
+
+[K-means clustering is not a free lunch](http://varianceexplained.org/r/kmeans-free-lunch/)

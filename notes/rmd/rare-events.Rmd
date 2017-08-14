@@ -1,0 +1,10 @@
+---
+title: "Rare Events"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+[How to handle Imbalanced Classification Problems in machine learning?](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/)

@@ -1,0 +1,130 @@
+---
+title: "Capacidade de Pagamento"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+# Legislação Relevante
+
+## CF 1988
+
+Art. 48. Cabe ao Congresso Nacional, com a sanção do Presidente da República, não exigida esta para o especificado nos arts. 49, 51 e 52, dispor sobre todas as matérias de competência da União, especialmente sobre:
+
+[...]
+
+XIV - moeda, seus limites de emissão, e montante da dívida mobiliária federal.
+
+[...]
+
+Art. 52. Compete privativamente ao Senado Federal:
+
+[...]
+
+VI - fixar, por proposta do Presidente da República, limites globais para o montante da dívida consolidada da União, dos Estados, do Distrito Federal e dos Municípios;
+
+VII - dispor sobre limites globais e condições para as operações de crédito externo e interno da União, dos Estados, do Distrito Federal e dos Municípios, de suas autarquias e demais entidades controladas pelo Poder Público federal;
+
+VIII - dispor sobre limites e condições para a concessão de garantia da União em operações de crédito externo e interno;
+
+IX - estabelecer limites globais e condições para o montante da dívida mobiliária dos Estados, do Distrito Federal e dos Municípios;
+
+[...]
+
+Art. 87. 
+
+[...]
+
+Parágrafo único. Compete ao Ministro de Estado, além de outras atribuições estabelecidas nesta Constituição e na lei:
+
+II - expedir instruções para a execução das leis, decretos e regulamentos;
+
+[...]
+
+Art. 163. Lei complementar disporá sobre:
+
+ I - finanças públicas;
+
+ II - dívida pública externa e interna, incluída a das autarquias, fundações e demais entidades controladas pelo Poder Público;
+
+III - concessão de garantias pelas entidades públicas;
+
+IV - emissão e resgate de títulos da dívida pública;
+
+V - fiscalização das instituições financeiras;
+
+V - fiscalização financeira da administração pública direta e indireta; (Redação dada pela Emenda Constitucional nº 40, de 2003)
+
+ VI - operações de câmbio realizadas por órgãos e entidades da União, dos Estados, do Distrito Federal e dos Municípios;
+
+VII - compatibilização das funções das instituições oficiais de crédito da União, resguardadas as características e condições operacionais plenas das voltadas ao desenvolvimento regional.
+
+
+
+## [LEI COMPLEMENTAR Nº 101, DE 4 DE MAIO DE 2000](http://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp101.htm)
+
+Art. 29. Para os efeitos desta Lei Complementar, são adotadas as seguintes definições:
+
+I - dívida pública consolidada ou fundada: montante total, apurado sem duplicidade, das obrigações financeiras do ente da Federação, assumidas em virtude de leis, contratos, convênios ou tratados e da realização de operações de crédito, para amortização em prazo superior a doze meses;
+
+II - dívida pública mobiliária: dívida pública representada por títulos emitidos pela União, inclusive os do Banco Central do Brasil, Estados e Municípios;
+
+III - operação de crédito: compromisso financeiro assumido em razão de mútuo, abertura de crédito, emissão e aceite de título, aquisição financiada de bens, recebimento antecipado de valores provenientes da venda a termo de bens e serviços, arrendamento mercantil e outras operações assemelhadas, inclusive com o uso de derivativos financeiros;
+
+IV - concessão de garantia: compromisso de adimplência de obrigação financeira ou contratual assumida por ente da Federação ou entidade a ele vinculada;
+
+V - refinanciamento da dívida mobiliária: emissão de títulos para pagamento do principal acrescido da atualização monetária.
+
+## [RESOLUÇÃO RSF Nº 40, DE 2000](http://legis.senado.leg.br/legislacao/PublicacaoSigen.action?id=562458&tipoDocumento=RSF&tipoTexto=ATU)
+
+## [RESOLUÇÃO RSF Nº 43, DE 2001](http://legis.senado.leg.br/legislacao/PublicacaoSigen.action?id=582604&tipoDocumento=RSF&tipoTexto=ATU)
+
+Art. 23. Os pedidos de autorização para a realização de operações de crédito interno ou externo de interesse dos Estados, do Distrito Federal e dos Municípios, que envolvam aval ou garantia da União deverão conter:
+I - exposição de motivos do Ministro da Fazenda, da qual conste a classificação da situação financeira do pleiteante, em conformidade com a norma do Ministério da Fazenda que dispõe sobre a capacidade de pagamento dos Estados, do Distrito Federal e dos Municípios;
+
+## [RESOLUÇÃO RSF Nº 48, DE 2007](http://legis.senado.leg.br/legislacao/PublicacaoSigen.action?id=576233&tipoDocumento=RSF&tipoTexto=ATU)
+
+## PORTARIA MF Nº 306, de 10 de setembro de 2012
+
+## PORTARIA STN Nº 543, de 18 de setembro de 2012
+
+## PORTARIA MF Nº 89, de 25 de abril de 1997
+
+## PORTARIA MF Nº 276, de 23 de outubro de 1997
+
+## Autorização de operações financeiras - Comissão de Assuntos Econômicos
+
+Resolução do Senado Federal nº 20 de 17/06/2010
+Resolução do Senado Federal nº 51 de 31/10/2012
+Resolução do Senado Federal nº 53 de 03/12/2013
+
+
+Resolução do Senado Federal nº 18 de 18/04/2006
+
+AUTORIZA O ESTADO DE MINAS GERAIS A CONTRATAR OPERAÇÃO DE CREDITO EXTERNO, COM GARANTIA DA UNIÃO, COM O BANCO INTERAMERICANO DE DESENVOLVIMENTO - BID, NO VALOR DE ATE US$ 50.000,000,00 (CINQUENTA MILHÕES DE DOLARES NORTE-AMERICANOS)
+
+AUTORIZAÇÃO , GOVERNO ESTADUAL , ESTADO DE MINAS GERAIS (MG) , CONTRATAÇÃO , OPERAÇÃO FINANCEIRA , EMPRESTIMO EXTERNO , BANCO INTERAMERICANO DE DESENVOLVIMENTO (BID) .
+
+PROJETO DE RESOLUÇÃO DO SENADO nº 24, de 2006
+
+Autoriza o Estado de Minas Gerais a contratar operação de crédito externo, com garantia da União, com o Banco Interamericano de Desenvolvimento - BID, no valor de até US$ 50,000,000.00 (cinqüenta milhões de dólares dos Estados Unidos da América).
+
+
+
+Autoriza o Estado do Rio de Janeiro a contratar operação de crédito externo, com garantia da União, com o Banco Internacional para Reconstrução e Desenvolvimento (BIRD), no valor de até US$ 500.000.000,00 (quinhentos milhões de dólares dos Estados Unidos da América)
+
+PROJETO DE RESOLUÇÃO DO SENADO nº 85, de 2013
+
+# References
+
+[https://www25.senado.leg.br/web/atividade/materias/-/materia/43190](https://www25.senado.leg.br/web/atividade/materias/-/materia/43190)
+
+[PLP 18/1999](http://www.camara.gov.br/proposicoesWeb/fichadetramitacao?idPropos)icao=38154
+
+[THE BRAZILIAN FISCAL RESPONSIBILITY LAW](http://www1.worldbank.org/publicsector/pe/BudgetLaws/BRLRFEnglish.pdf)
+
+[Lei dos Compromissos e dos Pagamentos em Atraso (LCPA)](http://www.dgo.pt/servicoonline/documents/leicompromissospagamentosatraso_manual.pdf)
+
+[CARRY-OVER OF BUDGET AUTHORITY](http://blog-pfm.imf.org/files/carry-over-of-budget-authority.pdf)

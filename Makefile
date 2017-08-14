@@ -24,6 +24,7 @@ notes/tex/%.pdf: notes/tex/%.tex
 	@rm -f notes/tex/*.blg
 	@rm -f notes/tex/*.fls
 	@rm -f notes/tex/*.out
+	@rm -f notes/tex/*.toc
 	@rm notes/tex/*.fdb_latexmk
 
 
@@ -43,4 +44,5 @@ clean:
 	@rm -f $(TEXDIR)/*.blg
 	@rm -f $(TEXDIR)/*.fls
 	@rm -f $(TEXDIR)/*.out
+	@rm -f $(TEXDIR)/*.toc
 	@rm $(TEXDIR)/$(TEXFILE).fdb_latexmk

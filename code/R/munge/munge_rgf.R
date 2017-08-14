@@ -11,3 +11,6 @@ munge(stem = "deducao_pessoal", report = "rgf")
 munge(stem = "dtp", report = "rgf")
 
 munge(stem = "dcb", report = "rgf")
+
+
+# munge(stem = "disp_caixa_bruta", report = "rgf") # deprecated

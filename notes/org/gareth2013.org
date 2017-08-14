@@ -1,0 +1,33 @@
+#+TITLE: gareth2013
+
+* ways to estimate the unknown function $f$ [fn:1]
+
+** parametric methods
+
+Its easier to estimate parameters of an assumed functional form than to estimate an arbitrary function
+
+If our assumption is not consistent with the data, the fit could be bad
+
+*** step 1 - assumption about the functional form of $f$
+
+**** linear functional form
+
+**** non-linear functional form
+
+*** step 2 - estimation of the parameters
+
+** non-parametric methods
+
+Because we need to estimate the function $f$, we need more data.
+
+Our fit will be good, but now we are in danger of following the noise in the data too closely. To avoid this we need to control for the correct amount of smoothness [fn:2]
+
+*** step 1 - no assumption about the functional form
+
+*** step 2 - estimation of $f$ directly
+
+* Footnotes
+
+[fn:1] $f$ represents the relationship between the inputs and the output
+
+[fn:2] in a two dimensional plane for example, this control how rough and wiggly the line is

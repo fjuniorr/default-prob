@@ -1,62 +1,67 @@
 library(ggjoy); library(tidyverse); library(data.table); library(broom)
 
 DT <- fread("data/analytic_data.csv")
+dict <- yaml::yaml.load_file("data/fiscal-indicators.yaml")
+# ==========================================================
+# exploratory stats
+# ==========================================================
+dict[["capag_pc"]]$def_pt
+DT[, stn_end] %>% summary()
+DT[, .(avg = mean(stn_end), sd = sd(stn_end), .N), by = state_calamity]
+DT[, .(avg = mean(stn_end), sd = sd(stn_end), .N), by = calamity]
 
 # ==========================================================
-# SUPPORT
+# exploratory viz
 # ==========================================================
 
-# https://simplystatistics.org/2017/07/13/the-joy-of-no-more-violin-plots/
-
-DT[, gdp_per_capita := gdp / pop]
-
-DT[, primary_oper_balance := (rec_primaria_cor - desp_primaria_cor_dv) / rec_primaria_cor]
-
-DT[, gdp_per_capita] %>% summary()
-
-DT[, primary_oper_balance] %>% summary()
-
-
-
+# x|year, calamity
 DT %>% 
-    split(.$state) %>% 
-    map(~ summary(.x$gdp_per_capita)) %>%
-    rbind.data.frame() %>% 
-    apply(MARGIN = 1, order)
+    ggplot(aes(x = factor(year), y = capag_idc, color = state_calamity)) +
+    geom_boxplot(position=position_dodge(1))
+
+# x|year, calamity
+DT %>% 
+    ggplot(aes(x = capag_idc, y = factor(year, 2016:2008), fill = state_calamity, colour = state_calamity)) + 
+    geom_joy(alpha=.3) 
+
+# x|calamity, state
+DT %>% 
+    ggplot(aes(x = capag_idc, y = state, fill = state_calamity, colour = state_calamity)) + 
+    geom_joy(alpha=.3) 
+
+# x|year, calamity, state
+DT %>% 
+    ggplot(aes(x = year, y = capag_idc, color = default)) +
+    geom_point() +
+    facet_wrap( ~ state)
+
+# ==========================================================
+DT[, .(stn_end ,stn_sdrcl ,stn_rpsd ,stn_dprcl ,stn_cgpp ,stn_pidt ,stn_pcrdp ,stn_rtdc)] %>% 
+    cor() %>% 
+    corrplot::corrplot(type="lower", order ="AOE")
 
 
 # ==========================================================
+# variables range
+# ==========================================================
+var <- "stn_rpsd"
+x <- DT[[var]]
 
-states_default <- DT[default == 1, state]
+hist(x)
+mean(x)
+sd(x)
+sd(x)*2
+upper <- mean(x) + 2*sd(x)
+upper
+lower <- mean(x) - 2*sd(x)
+lower
+summary(x)
 
-DT[state %in% states_default, state_default := 1]
+DT[!((x > lower ) & (x < upper)), c("id", "state", "yh1", var) , with = FALSE][order(state)]
 
-DT[is.na(state_default), state_default := 0]
-
-DT[, mean(primary_oper_balance), by = state_default]
-
-DT[, mean(primary_oper_balance), by = default]
-
-ggplot(DT, aes(x = primary_oper_balance)) + 
-    geom_histogram() +
-    facet_grid(state_default ~ .)
-
-ggplot(DT, aes(x = primary_oper_balance)) + 
-    geom_density() +
-    facet_grid(state_default ~ .)
-
-ggplot(DT, aes(x=primary_oper_balance, y=..density..)) +
-    geom_histogram(fill="cornsilk", colour="grey60", size=.2) +
-    geom_density() +
-    facet_grid(state_default ~ .)
-
-
-
-DT %>% 
-    ggplot(aes(x = year, y = primary_oper_balance)) + 
-    geom_point() + 
-    facet_wrap( ~ state) +
-    geom_smooth(method = "lm")
+# ==========================================================
+# exploratory models
+# ==========================================================
 
 fit <- DT %>% 
         split(.$state) %>% 
@@ -68,7 +73,6 @@ fit %>%
     unlist() %>% 
     sort(decreasing = TRUE) %>% 
     barplot(las = 2)
-
 
 fit %>% 
     map(tidy) %>% 
@@ -86,30 +90,3 @@ fit %>%
     geom_point() +
     theme_bw()
 
-
-DT %>% 
-    ggplot(aes(x = gdp / pop)) + geom_density() + facet_wrap(~factor(year))
-
-
-DT %>% 
-    ggplot(aes(x = eval(primary_oper_balance))) + geom_density() + facet_wrap(~factor(year))
-
-DT %>% 
-    ggplot(aes(x = eval(primary_oper_balance), y = factor(year))) + geom_joy()
-
-DT %>% 
-    ggplot(aes(x = factor(year), y = eval(primary_oper_balance))) + geom_boxplot()
-
-
-
-DT %>% 
-    ggplot(aes(x = stn_end)) + geom_line(stat = "density")
-
-DT %>% 
-    ggplot(aes(x = stn_end, y = factor(year))) + geom_joy()
-
-DT %>% 
-    ggplot(aes(x = stn_end)) + geom_line(stat = "density") + facet_wrap( ~ as.factor(year))
-
-DT %>% 
-    ggplot(aes(x = stn_end)) + geom_histogram() + facet_wrap( ~ state)

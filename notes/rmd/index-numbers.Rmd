@@ -1,0 +1,35 @@
+---
+title: "Index Numbers"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+Number, Ratio, Quotient
+
+Dimension, Unit
+
+Rate, Index, Indicator, Relative
+
+Proportion, Proportionate change, Relative change
+
+Percentage, Percentage change
+
+Percentage point change
+
+Growth Rate
+
+Index Number
+
+Price Level, Price Index
+
+A price index is very good for measuring changes in prices over time, but should not be used to talk about the level of prices.
+
+
+## References
+
+[Handbook on constructing composite indicators: methodology and user guide](http://www.oecd.org/els/soc/handbookonconstructingcompositeindicatorsmethodologyanduserguide.htm)
+
+[http://www.planejamento.mg.gov.br/images/documentos/ppag/2016-2019/Planejamento/Manual_de_revisao_do_PPAG_2016-2019_LOA_2018.pdf](http://www.planejamento.mg.gov.br/images/documentos/ppag/2016-2019/Planejamento/Manual_de_revisao_do_PPAG_2016-2019_LOA_2018.pdf)

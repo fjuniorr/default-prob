@@ -1,0 +1,12 @@
+---
+title: "Perfect Classifier"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+[](https://stats.stackexchange.com/questions/11109/how-to-deal-with-perfect-separation-in-logistic-regression)
+
+[](https://stats.stackexchange.com/questions/277201/is-it-possible-to-get-fitted-values-0-or-1-in-logistic-regression-when-the-fitti)

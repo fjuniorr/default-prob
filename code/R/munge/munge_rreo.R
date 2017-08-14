@@ -8,7 +8,7 @@ munge(stem = "primario", report = "rreo")
 munge(stem = "dcl", report = "rreo")
 munge(stem = "dfl", report = "rreo")
 munge(stem = "nominal", report = "rreo")
-munge(stem = "disp_caixa", report = "rreo")
+munge(stem = "disp_caixa_nominal", report = "rreo")
 
 # TODO
 

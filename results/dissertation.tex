@@ -2,14 +2,31 @@
 %-------------------------------------------------------
 % PACKAGES
 
+\usepackage{float}
 \usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{bm}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[colorlinks=true,linkcolor=blue, citecolor=blue]{hyperref}
 
 % COMANDS FOR TABLE
 \usepackage{dcolumn}
 \usepackage{caption}
 \newcommand\fnote[1]{\captionsetup{font=scriptsize, format=hang}\caption*{#1}}
+
+
+% Econometrics notations
+\newcommand{\cov}{\operatorname{cov}}
+\newcommand{\var}{\operatorname{var}}
+\newcommand{\mX}{\bm X}
+\newcommand{\vx}{\bm x}
+\newcommand{\vbeta}{\bm \beta}
+\newcommand{\dto}{\stackrel{d}{\longrightarrow}}
 
 %-------------------------------------------------------
 % CONFIG
@@ -20,7 +37,7 @@
 %-------------------------------------------------------
 % PRE-TEXT CONTENT
 
-\title{Assessing Default Probabilities in Subnational Governments: The Case of Brazil}
+\title{Assessing Fiscal Distress in Subnational Governments: The Case of Brazil}
 \author{Francisco Alves}
 \date{2017}
 
@@ -29,13 +46,37 @@
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \centering
+    {\scshape\LARGE University of York\par}
+    \vspace{1cm}
+    {\scshape\Large Department of Economics and Related Studies\par}
+    \vspace{1.5cm}
+    {\huge\bfseries Assessing Fiscal Distress in Subnational Governments: The Case of Brazil\par}
+    \vspace{2cm}
+    {\Large\itshape Francisco Alves\par}
+    {MSc Economics and Public Policy\par}
+    \vfill
+    supervised by\par
+    Dr.~Michal \textsc{Horvath}
 
-\input{tex/01_introduction}
-\input{tex/02_literature-review}
-\input{tex/03_methods}
-\input{tex/04_results}
-\input{tex/05_discussion}
+    \vfill
+
+% Bottom of the page
+    {\large \today\par}
+\end{titlepage}
+
+% \begin{abstract}
+% My abstract
+% \end{abstract}
+
+\tableofcontents
+
+\input{tex/01_introduction} % 1000 words
+\input{tex/02_literature-review} % 2500 words
+\input{tex/03_methods} % 1000 words
+\input{tex/04_results} % 2500 words
+\input{tex/05_conclusion} % 1500 words
 
 %-------------------------------------------------------
 % POST-TEXT CONTENT
@@ -44,6 +85,8 @@
 \bibliographystyle{agsm}
 {\footnotesize
 \bibliography{../references.bib}}
+
+% \input{tex/10_appendix}
 
 \end{document}
 

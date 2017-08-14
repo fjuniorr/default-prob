@@ -1,4 +1,4 @@
-library(tidyverse)
+library(tidyverse); library(data.table)
 
 # # run if needed
 # destfile <- "data-raw/Fisregp.zip"
@@ -28,10 +28,10 @@ DF_stock <- raw_DF_stock %>%
                 dplyr::select(-empty, -dez_2007) %>% 
                 dplyr::filter(label == "Gov. Estadual" | label == "Distrito Federal") %>% 
                 dplyr::mutate(state = states$sigla) %>% 
-                data.table::melt(id.vars = c("state", "label"), variable.name = "id", value.name = "net_debt") %>% 
+                data.table::melt(id.vars = c("state", "label"), variable.name = "id", value.name = "value") %>% 
                 tidyr::separate(id, into = c("month", "year")) %>% 
                 dplyr::filter(month == "dez") %>% 
-                dplyr::mutate(id = paste0(state, year), value = net_debt * 1000000) %>% 
+                dplyr::mutate(id = paste0(state, year), value = value * 1000000) %>% 
                 dplyr::select(id, state, year, value)
                 
 write_csv(DF_stock, path_stock)
@@ -56,11 +56,18 @@ DF_flows  <- raw_DF_flows %>%
                 map(select, -empty) %>% 
                 map(filter, label == "Gov. Estadual" | label == "Distrito Federal") %>% 
                 map(mutate, state = states$sigla) %>% 
-                map(data.table::melt, id.vars = c("state", "label"), variable.name = "id", value.name = "net_debt") %>% 
+                map(data.table::melt, id.vars = c("state", "label"), variable.name = "id", value.name = "value") %>% 
                 map(separate, id, into = c("month", "year")) %>% 
                 map(filter, month == "dez") %>% 
-                map(mutate, id = paste0(state, year), value = net_debt * 1000000) %>% 
+                map(mutate, id = paste0(state, year), value = value * 1000000) %>% 
                 map(select, id, state, year, value)
+
+
+# rbindlist(DF_flows, idcol = "type") %>% 
+#     dcast(id + state + year ~ type, value.var = "value") %>% 
+#     full_join(DF_stock, by = c("id", "state", "year")) %>% 
+#     write_csv("data/cleaned/fisregp_bacen.csv")
+
 
 
 pwalk(list(DF_flows, path_flows), write_csv)

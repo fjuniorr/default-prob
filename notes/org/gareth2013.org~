@@ -1,0 +1,25 @@
+#+TITLE: gareth2013
+
+* ways to estimate the unknown function $f$[fn:1]
+
+** parametric methods
+
+Its easier to estimate parameters of an assumed functional form than to estimate an arbitrary function
+
+If our assumption is not consistent with the data, the fit could be bad
+
+*** step 1 - assumption about the functional form of $f$
+
+**** linear functional form
+
+**** non-linear functional form
+
+*** step 2 - estimation of the parameters
+
+** non-parametric methods
+
+*** step 1 - estimation of $f$ directly
+
+* Footnotes
+
+[fn:1] $f$ represents the relationship between the inputs and the output

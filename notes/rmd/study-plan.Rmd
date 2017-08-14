@@ -19,6 +19,12 @@ bibliography: ../../references.bib
 
 ## Web Scraping
 
+## Web APIs
+
+## Databases
+
+## Distributed Computing
+
 # Math
 
 ## Integrals

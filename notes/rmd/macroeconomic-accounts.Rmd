@@ -1,0 +1,64 @@
+---
+title: "Macroeconomic Accounts"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+# Conceptual Framework
+
+
+
+# National Accounts - Real Sector
+
+
+# Government Finance Statistics - Government Sector
+
+
+# Balance of Payments and International Investment Position - External Sector
+
+
+# Monetary and Financial Statistics - Financial Sector
+
+
+# Glossary
+
+## Gross
+
+## Real
+
+## Seasonally adjusted
+
+## Annualized Compund Rate of Growth
+
+## Série encadeada do volume
+
+## Valor adicionado bruto (IBGE)
+
+Valor que a atividade agrega aos bens e serviços consumidos no seu processo produtivo. É a contribuição ao produto interno bruto pelas diversas atividades econômicas, obtida pela diferença entre o valor bruto da produção e o consumo intermediário absorvido por essas atividades.
+
+## Contas Nacionais Trimestriais (IBGE)
+
+Apresenta os valores correntes e os índices de volume (1995=100) trimestralmente para o Produto Interno Bruto a preços de mercado, impostos sobre produtos, valor adicionado a preços básicos, consumo pessoal, consumo do governo, formação bruta de capital fixo, variação de estoques, exportações e importações de bens e serviços. São calculadas duas séries de números-índices: a com base no ano anterior e a encadeada com referência em 2010 (1995 = 100). A série encadeada é ajustada sazonalmente pelo X13-ARIMA possibilitando o cálculo das taxas de variação em relação ao trimestre imediatamente anterior.
+
+## Impostos, líquidos de subsídios, sobre produtos (IBGE)
+
+Impostos, taxas e contribuições que incidem sobre os bens e serviços quando são produzidos ou importados, distribuídos, vendidos, transferidos ou de outra forma disponibilizados pelos seus proprietários, descontando os subsídios.
+
+## Produto Interno Bruto (IBGE)
+
+Total dos bens e serviços produzidos pelas unidades produtoras residentes destinados ao consumo final sendo, portanto, equivalente à soma dos valores adicionados pelas diversas atividades econômicas acrescida dos **impostos, líquidos de subsídios, sobre produtos**. 
+
+O produto interno bruto também é equivalente à soma dos consumos finais de bens e serviços valorados a preço de mercado sendo, também, equivalente à soma das rendas primárias. Pode, portanto, ser expresso por três óticas: 
+
+a) da produção – o produto interno bruto é igual ao valor bruto da produção, a preços básicos, menos o consumo intermediário, a preços de consumidor, mais os impostos, líquidos de subsídios, sobre produtos; 
+
+b) da despesa – o produto interno bruto é igual à despesa de consumo das famílias, mais o consumo do governo, mais o consumo das instituições sem fins de lucro a serviço das famílias (consumo final), mais a formação bruta de capital fixo, mais a variação de estoques, mais as exportações de bens e serviços, menos as importações de bens e serviços; e
+
+c) da renda – o produto interno bruto é igual à remuneração dos empregados, mais
+o total dos impostos, líquidos de subsídios, sobre a produção e a importação, mais o rendimento misto bruto, mais o excedente operacional bruto.
+
+## Série encadeada do volume do valor adicionado bruto
+

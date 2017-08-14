@@ -1,0 +1,66 @@
+stn_end:
+  label_pt: Endividamento
+  def_pt: Dívida Pública Consolidada / Receita Corrente Líquida
+  label_en: Indebtedness
+  def_en: Gross Debt / Net current revenue
+  memoria: dcb / rcl
+stn_sdrcl:
+  label_pt: Serviço da Dívida na Receita Corrente Líquida
+  def_pt: Serviço da Dívida / Receita Corrente Líquida
+  label_en: NA
+  def_en: Debt service / Net current revenue
+  memoria: (juros + amortizacao) / rcl
+stn_rpsd:
+  label_pt: Resultado Primário Servindo a Dívida
+  def_pt: Resultado Primário / Serviço da Dívida
+  label_en: NA
+  def_en: Primary balance / Debt service
+  memoria: primario / (juros + amortizacao)
+stn_dprcl:
+  label_pt: Despesa com Pessoal e Encargos Sociais na Receita Corrente Líquida
+  def_pt: Pessoal e Encargos Sociais / Receita Corrente Líquida
+  label_en: NA
+  def_en: Compensation of employees / Net current revenue
+  memoria: dbp / rcl
+stn_cgpp:
+  label_pt: Capacidade de Geração de Poupança Própria
+  def_pt: Resultado Corrente / Receitas Correntes
+  label_en: Saving rate
+  def_en: Current fiscal balance / Current revenue
+  memoria: (rec_cor - desp_cor) / desp_cor
+stn_pidt:
+  label_pt: Participação dos Investimentos na Despesa Total
+  def_pt: Investimentos / Despesa Total
+  label_en: NA
+  def_en: Gross investment in nonfinancial assets / Total expenditure
+  memoria: investimentos / desp_total
+stn_pcrdp:
+  label_pt: Participação das Contribuições e Remunerações do RPPS nas Despesas Previdenciárias
+  def_pt: Contribuições RPPS + Remunerações RPPS / Despesas Previdenciárias
+  label_en: NA
+  def_en: Social contributions / Social benefits
+  memoria: rec_previdenciarias / inativos
+stn_rtdc:
+  label_pt: Receitas Tributárias nas Despesas de Custeio
+  def_pt: Receitas Tributárias / Despesas de Custeio
+  label_en: NA
+  def_en: Tax revenues / (Current expenses + Principal payments)
+  memoria: rec_tributaria / (desp_cor + amortizacao)
+capag_idc:
+  label_pt: Endividamento 
+  def_pt: Dívida Consolidade Bruta / Receita Corrente Líquida
+  label_en: NA
+  def_en: Gross Debt / Net current revenue
+  memoria: dcb / rcl
+capag_pc:
+  label_pt: Poupança Corrente 
+  def_pt: Despesas Correntes / Receitas Correntes Ajustadas
+  label_en: Saving rate
+  def_en: Current expenses / Current revenue
+  memoria: desp_cor / rec_cor
+capag_il:
+  label_pt: Índice de Liquidez 
+  def_pt: Obrigações Financeiras / Disponibilidade de Caixa Bruta
+  label_en: NA
+  def_en: Current liabilities / Cash and cash equivalents (Highly liquid assets)
+  memoria: obrig_fin / disp_caixa_bruta

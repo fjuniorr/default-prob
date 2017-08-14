@@ -1,0 +1,18 @@
+---
+title: "Relevant Newspaper News"
+output:
+  html_document:
+    theme: united
+---
+# Portuguese
+
+[Calamidade financeira de estados não é reconhecida pelo governo](http://g1.globo.com/bom-dia-brasil/noticia/2016/12/calamidade-financeira-de-estados-nao-e-reconhecida-pelo-governo.html)
+
+[Falência ou intervenção federal? O que vem após a calamidade no Rio?](https://noticias.uol.com.br/cotidiano/ultimas-noticias/2016/09/14/falencia-ou-intervencao-federal-o-que-vem-apos-a-calamidade-no-rio.htm)
+
+[Senado aprova projeto de socorro financeiro a estados superendividados](http://www12.senado.leg.br/noticias/materias/2017/05/17/senado-aprova-projeto-de-socorro-financeiro-a-estados-superendividados)
+
+
+# English
+
+[The Economist explains - What happens when a country goes bust](https://www.economist.com/blogs/economist-explains/2014/11/economist-explains-20)

@@ -1,0 +1,34 @@
+---
+title: "Probability of Default"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+STRUCTURAL VERSUS REDUCED FORM MODELS
+
+Point-in-Time versus Through-the-Cycle
+
+Conditional and Unconditional Forecasting
+
+Stressed and Unstressed PD
+
+# References
+
+http://www.kamakuraco.com/Blog/tabid/231/EntryId/18/-Point-in-Time-versus-Through-the-Cycle-Credit-Ratings-A-Distinction-without-a-Difference.aspx
+
+https://www.z-riskengine.com/media/1029/point-in-time-versus-through-the-cycle-ratings.pdf
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.139.3546&rep=rep1&type=pdf
+
+https://mainlymacro.blogspot.co.uk/2014/08/on-macroeconomic-forecasting.html
+
+https://mainlymacro.blogspot.co.uk/2014/08/conditional-and-unconditional.html
+
+[Forecast Errors](http://www.bankofengland.co.uk/publications/Documents/speeches/2013/speech653.pdf)
+
+[The dog and the frisbee](http://www.bankofengland.co.uk/archive/Documents/historicpubs/speeches/2012/speech596.pdf)
+
+[Conditional Insight, Unconditional Disaster](http://econlog.econlib.org/archives/2013/05/conditional_ins.html)

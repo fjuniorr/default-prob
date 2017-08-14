@@ -1,0 +1,14 @@
+---
+title: "Misclassification"
+output:
+  html_document:
+    theme: united
+    toc: yes
+bibliography: ../../references.bib    
+---
+
+# References
+
+[Clustering as a means of splitting up data for logistic regression](https://stats.stackexchange.com/questions/31440/clustering-as-a-means-of-splitting-up-data-for-logistic-regression)
+
+[Adjusting for covariate misclassification in logistic regression - predictive value weighting](http://thestatsgeek.com/2014/05/08/adjusting-for-covariate-misclassification-in-logistic-regression-predictive-value-weighting/)

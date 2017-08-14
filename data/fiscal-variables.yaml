@@ -1,0 +1,573 @@
+tbl_nat_rec:
+  - label_pt: Receitas Correntes
+    expr: rec_cor
+    memoria: NA
+  - label_pt: Receitas de Capital
+    expr: rec_cap
+    memoria: NA
+  - label_pt: Receita Total
+    expr: rec_total
+    memoria: NA
+
+tbl_nat_desp:
+  - label_pt: Despesas Correntes
+    expr: desp_cor
+    memoria: pessoal + juros + custeio
+  - label_pt: Pessoal e Encargos Sociais
+    expr: pessoal
+    memoria: NA
+  - label_pt: Juros e Encargos da Dívida
+    expr: juros
+    memoria: NA
+  - label_pt: Outras Despesas Correntes
+    expr: custeio 
+    memoria: NA
+  - label_pt: Despesas de Capital
+    expr: desp_cap
+    memoria: investimentos + inv_fin + amortizacao
+  - label_pt: Investimentos
+    expr: investimentos
+    memoria: NA
+  - label_pt: Inversões Financeiras
+    expr: inv_fin
+    memoria: NA
+  - label_pt: Concessão de empréstimos e financiamentos
+    expr: concessao_emprestimos
+    memoria: NA
+  - label_pt: Aquisição de títulos representativos de capital já integralizado
+    expr: aquisicao_titulos
+    memoria: NA
+  - label_pt: Amortização da Dívida
+    expr: amortizacao
+    memoria: NA
+  - label_pt: Despesa Total
+    expr: desp_total
+    memoria: desp_cor + desp_cap
+
+tbl_rec_primaria:
+  - label_pt: RECEITAS PRIMÁRIAS CORRENTES
+    expr: rec_primaria_cor
+    memoria: NA
+  - label_pt: Receitas Tributárias
+    expr: rec_tributaria
+    memoria: NA
+  - label_pt: ICMS
+    expr: icms
+    memoria: NA
+  - label_pt: IPVA
+    expr: ipva
+    memoria: NA
+  - label_pt: ITCD
+    expr: itcd
+    memoria: NA
+  - label_pt: IRRF
+    expr: irrf
+    memoria: NA
+  - label_pt: Outras Receitas Tributárias
+    expr: demais_rec_tributaria
+    memoria: NA
+  - label_pt: Receitas de Contribuições
+    expr: rec_contribuicoes
+    memoria: NA
+  - label_pt: Receitas Previdenciárias
+    expr: rec_previdenciarias
+    memoria: NA
+  - label_pt: Outras Receitas de Contribuições
+    expr: demais_rec_contribuicoes
+    memoria: NA
+  - label_pt: Receita Patrimonial Líquida
+    expr: rec_patrimonial_liq
+    memoria: NA
+  - label_pt: Receita Patrimonial
+    expr: rec_patrimonial
+    memoria: NA
+  - label_pt: Aplicações Financeiras
+    expr: aplicacoes_financeiras
+    memoria: NA
+  - label_pt: Transferências Correntes
+    expr: transf_cor
+    memoria: NA
+  - label_pt: FPE
+    expr: fpe
+    memoria: NA
+  - label_pt: Convênios
+    expr: convenios_cor
+    memoria: NA
+  - label_pt: Outras Transferências Correntes
+    expr: demais_transf_cor
+    memoria: NA
+  - label_pt: Demais Receitas Correntes
+    expr: demais_rec_cor
+    memoria: NA
+  - label_pt: Dívida Ativa
+    expr: divida_ativa
+    memoria: NA
+  - label_pt: Diversas Receitas Correntes
+    expr: diversas_rec_cor
+    memoria: NA
+  - label_pt: RECEITAS DE CAPITAL
+    expr: rec_capital
+    memoria: NA
+  - label_pt: Operações de Crédito
+    expr: oper_cred
+    memoria: NA
+  - label_pt: Amortização de Empréstimos
+    expr: amortizacao_emp
+    memoria: NA
+  - label_pt: Alienação de Bens
+    expr: rec_alienacao
+    memoria: NA
+  - label_pt: Transferências de Capital
+    expr: transf_cap
+    memoria: NA
+  - label_pt: Convênios
+    expr: convenios_cap
+    memoria: NA
+  - label_pt: Outras Transferências de Capital
+    expr: demais_transf_cap
+    memoria: NA
+  - label_pt: Outras Receitas de Capital
+    expr: outras_rec_cap
+    memoria: NA
+  - label_pt: RECEITAS PRIMÁRIAS DE CAPITAL
+    expr: rec_primaria_cap
+    memoria: NA
+  - label_pt: RECEITA PRIMÁRIA TOTAL
+    expr: rec_primaria
+    memoria: NA
+
+tbl_desp_primaria:
+  - label_pt: Despesas Correntes
+    expr: desp_cor
+    memoria: pessoal + juros + custeio
+  - label_pt: Pessoal e Encargos Sociais
+    expr: pessoal
+    memoria: NA
+  - label_pt: Juros e Encargos da Dívida
+    expr: juros
+    memoria: NA
+  - label_pt: Outras Despesas Correntes
+    expr: custeio 
+    memoria: transf_mun + demais_custeio
+  - label_pt: Transferências Constitucionais e Legais
+    expr: transf_mun
+    memoria: NA
+  - label_pt: Demais Despesas Correntes
+    expr: demais_custeio
+    memoria: NA
+  - label_pt: Despesa Primária Corrente 
+    expr: desp_primaria_cor
+    memoria: desp_cor - juros
+  - label_pt: Despesas de Capital
+    expr: desp_cap
+    memoria: investimentos + inv_fin + amortizacao
+  - label_pt: Investimentos
+    expr: investimentos
+    memoria: NA
+  - label_pt: Inversões Financeiras
+    expr: inv_fin
+    memoria: concessao_emprestimos + aquisicao_titulos + demais_inv_fin
+  - label_pt: Concessão de empréstimos e financiamentos
+    expr: concessao_emprestimos
+    memoria: NA
+  - label_pt: Aquisição de títulos representativos de capital já integralizado
+    expr: aquisicao_titulos
+    memoria: NA
+  - label_pt: Demais Inversões Financeiras
+    expr: demais_inv_fin
+    memoria: NA
+  - label_pt: Amortização da Dívida
+    expr: amortizacao
+    memoria: NA
+  - label_pt: Despesas Primária de Capital
+    expr: desp_primaria_cap
+    memoria: desp_cap - amortizacao - aquisicao_titulos - concessao_emprestimos
+  - label_pt: Reserva de Contingência 
+    expr: reserva
+    memoria: NA
+  - label_pt: Reserva do RPPS
+    expr: reserva_rpps
+    memoria: NA
+  - label_pt: Despesa Primária
+    expr: desp_primaria
+    memoria: desp_primaria_cor + desp_primaria_cap
+  - label_pt: Resultado Primário
+    expr: primario
+    memoria: rec_primaria - desp_primaria
+
+tbl_nominal:
+  - label_pt: Dívida Consolidada Bruta
+    expr: dcb_nominal
+    memoria: NA
+  - label_pt: Deduções
+    expr: deducoes_nominal
+    memoria: disp_caixa_nominal + haveres_financeiros - rpp_nominal
+  - label_pt: Disponibilidade de Caixa Bruta
+    expr: disp_caixa_nominal
+    memoria: NA   
+  - label_pt: Demais Haveres Financeiros
+    expr: haveres_financeiros
+    memoria: NA
+  - label_pt: Restos a Pagar Processados
+    expr: rpp_nominal
+    memoria: NA
+  - label_pt: Dívida Consolidada Líquida
+    expr: dcl_nominal
+    memoria: dcb_nominal - deducoes_nominal
+  - label_pt: Receita de Privatizações
+    expr: rec_privatizacoes
+    memoria: NA
+  - label_pt: Passivos Reconhecidos
+    expr: passivos_reconhecidos
+    memoria: NA
+  - label_pt: Dívida Fiscal Líquida
+    expr: dfl
+    memoria: dcl_nominal - rec_privatizacoes - passivos_reconhecidos
+  - label_pt: Resultado Nominal
+    expr: nominal
+    memoria: NA
+
+tbl_divida:
+  - label_pt: NA
+    expr: NA
+    memoria: NA 
+
+tbl_bacen:
+  - label_pt: Net Debt
+    expr: net_debt_bacen
+    memoria: NA
+  - label_pt: Primary Balance
+    expr: primario_bacen
+    memoria: NA
+  - label_pt: Nominal Interest
+    expr: juros_bacen
+    memoria: NA
+  - label_pt: Nominal Balance
+    expr: nominal_bacen
+    memoria: NA
+  - label_pt: Other Flows
+    expr: other_flows_bacen
+    memoria: NA   
+
+tbl_rcl:  
+  - label_pt: Receita Corrente Líquida
+    expr: rcl
+    memoria: NA
+  - label_pt: Receitas Tributárias
+    expr: rec_tributaria  
+    memoria: NA
+
+tbl_pessoal:
+  - label_pt: Despesa Bruta com Pessoal
+    expr: dbp
+    memoria: ativos + inativos + contratos
+  - label_pt: Pessoal Ativo
+    expr: ativos
+    memoria: NA
+  - label_pt: Pessoal Inativo e Pensionistas
+    expr: inativos
+    memoria: NA
+  - label_pt: Outras Despesas de Pessoal decorrentes de Contratos de Terceirização
+    expr: contratos
+    memoria: NA
+  - label_pt: Despesas de Pessoal Não Computadas
+    expr: deducao_pessoal
+    memoria: NA
+  - label_pt: Despesa Total com Pessoal
+    expr: dtp
+    memoria: dbp - deducao_pessoal
+
+tbl_disp_caixa:  
+  - label_pt: Disponibilidade de Caixa Bruta
+    expr: disp_caixa_bruta
+    memoria: disp_caixa_bruta_vinculado + disp_caixa_bruta_ordinario
+  - label_pt: Disponibilidade de Caixa Bruta - Recursos Vinculados
+    expr: disp_caixa_bruta_vinculado
+    memoria: NA
+  - label_pt: Disponibilidade de Caixa Bruta - Recursos Ordinarios
+    expr: disp_caixa_bruta_ordinario
+    memoria: NA
+  - label_pt: Obrigações Financeiras
+    expr: obrig_fin
+    memoria: obrig_fin_vinculado + obrig_fin_ordinario
+  - label_pt: Obrigações Financeiras - Recursos Vinculados
+    expr: obrig_fin_vinculado
+    memoria: rpp_anterior_vinculado + rpp_exercicio_vinculado + rpnp_anterior_vinculado + demais_obrig_fin_vinculado
+  - label_pt: Obrigações Financeiras - Recursos Ordinarios
+    expr: obrig_fin_ordinario
+    memoria: rpp_anterior_ordinario + rpp_exercicio_ordinario + rpnp_anterior_ordinario + demais_obrig_fin_ordinario
+  - label_pt: RPP Exercícios Anteriores
+    expr: rpp_anterior
+    memoria: rpp_anterior_vinculado + rpp_anterior_ordinario
+  - label_pt: RPP Exercícios Anteriores - Recursos Vinculados
+    expr: rpp_anterior_vinculado
+    memoria: NA
+  - label_pt: RPP Exercícios Anteriores - Recursos Ordinarios
+    expr: rpp_anterior_ordinario
+    memoria: NA    
+  - label_pt: RPP Exercício
+    expr: rpp_exercicio
+    memoria: rpp_exercicio_vinculado + rpp_exercicio_ordinario
+  - label_pt: RPP Exercício - Recursos Vinculados
+    expr: rpp_exercicio_vinculado
+    memoria: NA
+  - label_pt: RPP Exercício - Recursos Ordinarios
+    expr: rpp_exercicio_ordinario
+    memoria: NA    
+  - label_pt: RPNP Exercícios Anteriores
+    expr: rpnp_anterior
+    memoria: rpnp_anterior_vinculado + rpnp_anterior_ordinario
+  - label_pt: RPNP Exercícios Anteriores - Recursos Vinculados
+    expr: rpnp_anterior_vinculado
+    memoria: NA
+  - label_pt: RPNP Exercícios Anteriores - Recursos Ordinarios
+    expr: rpnp_anterior_ordinario
+    memoria: NA    
+  - label_pt: Demais Obrigações Financeiras
+    expr: demais_obrig_fin
+    memoria: demais_obrig_fin_vinculado + demais_obrig_fin_ordinario
+  - label_pt: Demais Obrigações Financeiras - Recursos Vinculados
+    expr: demais_obrig_fin_vinculado
+    memoria: NA
+  - label_pt: Demais Obrigações Financeiras - Recursos Ordinarios
+    expr: demais_obrig_fin_ordinario
+    memoria: NA    
+  - label_pt: Disponibilidade de Caixa Líquida
+    expr: disp_caixa_liq
+    memoria: disp_caixa_bruta - obrig_fin
+  - label_pt: Disponibilidade de Caixa Líquida - Recursos Vinculados
+    expr: disp_caixa_liq_vinculado
+    memoria: NA
+  - label_pt: Disponibilidade de Caixa Líquida - Recursos Ordinarios
+    expr: disp_caixa_liq_ordinario
+    memoria: NA    
+  - label_pt: RPNP Exercício
+    expr: rpnp_exercicio
+    memoria: rpnp_exercicio_vinculado + rpnp_exercicio_ordinario
+  - label_pt: RPNP Exercício - Recursos Vinculados
+    expr: rpnp_exercicio_vinculado
+    memoria: NA
+  - label_pt: RPNP Exercício - Recursos Ordinarios
+    expr: rpnp_exercicio_ordinario
+    memoria: NA    
+
+tbl_previdencia:
+  - label_pt: Receitas Previdenciárias
+    expr: rec_rpps
+    memoria: NA
+  - label_pt: Despesas Previdenciárias
+    expr: desp_previdencia
+    memoria: NA
+
+tbl_statement_of_operations:
+- label_pt: NA
+  label_en: Revenue
+  expr: NA 
+  memoria: summation item
+  cod: 1 
+- label_pt: NA
+  label_en: Taxes
+  expr: NA 
+  memoria: NA
+  cod: 11 
+- label_pt: NA
+  label_en: Social contributions
+  expr: NA 
+  memoria: NA
+  cod: 12 
+- label_pt: NA
+  label_en: Grants
+  expr: NA 
+  memoria: NA
+  cod: 13 
+- label_pt: NA
+  label_en: Other revenue
+  expr: NA 
+  memoria: NA
+  cod: 14 
+- label_pt: NA
+  label_en: Expense
+  expr: NA 
+  memoria: summation item
+  cod: 2 
+- label_pt: NA
+  label_en: Compensation of employees
+  expr: NA 
+  memoria: NA
+  cod: 21 
+- label_pt: NA
+  label_en: Use of goods and services
+  expr: NA 
+  memoria: NA
+  cod: 22 
+- label_pt: NA
+  label_en: Consumption of fixed capital
+  expr: NA 
+  memoria: NA
+  cod: 23 
+- label_pt: NA
+  label_en: Interest
+  expr: NA 
+  memoria: NA
+  cod: 24 
+- label_pt: NA
+  label_en: Subsidies
+  expr: NA 
+  memoria: NA
+  cod: 25 
+- label_pt: NA
+  label_en: Grants
+  expr: NA 
+  memoria: NA
+  cod: 26 
+- label_pt: NA
+  label_en: Social benefits
+  expr: NA 
+  memoria: NA
+  cod: 27 
+- label_pt: NA
+  label_en: Other expense
+  expr: NA 
+  memoria: NA
+  cod: 28 
+- label_pt: NA
+  label_en: Net operating balance
+  expr: NA 
+  memoria: balancing item
+  cod: NOB 
+- label_pt: NA
+  label_en: Gross operating balance
+  expr: NA 
+  memoria: balancing item
+  cod: GOB 
+- label_pt: NA
+  label_en: Net investment in nonfinancial assets
+  expr: NA 
+  memoria: summation item
+  cod: 31 
+- label_pt: NA
+  label_en: Gross investment in nonfinancial assets
+  expr: NA 
+  memoria: summation item
+  cod: 31 
+- label_pt: NA
+  label_en: Fixed assets
+  expr: NA 
+  memoria: NA
+  cod: 311 
+- label_pt: NA
+  label_en: Inventories
+  expr: NA 
+  memoria: NA
+  cod: 312 
+- label_pt: NA
+  label_en: Valuables
+  expr: NA 
+  memoria: NA
+  cod: 313 
+- label_pt: NA
+  label_en: Nonproduced assets
+  expr: NA 
+  memoria: NA
+  cod: 314 
+- label_pt: NA
+  label_en: Expenditure
+  expr: NA 
+  memoria: balancing item
+  cod: 2M 
+- label_pt: NA
+  label_en: Net lending / Net borrowing
+  expr: NA 
+  memoria: balancing item
+  cod: NLB 
+- label_pt: NA
+  label_en: Net acquisition of financial assets
+  expr: NA 
+  memoria: summation item
+  cod: 32 
+- label_pt: NA
+  label_en: Domestic
+  expr: NA 
+  memoria: NA
+  cod: 321 
+- label_pt: NA
+  label_en: External
+  expr: NA 
+  memoria: NA
+  cod: 322 
+- label_pt: NA
+  label_en: Net incurrence of liabilities
+  expr: NA 
+  memoria: summation item
+  cod: 33 
+- label_pt: NA
+  label_en: Domestic
+  expr: NA 
+  memoria: NA
+  cod: 331 
+- label_pt: NA
+  label_en: External
+  expr: NA 
+  memoria: NA
+  cod: 332 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,575 @@
+Chapter 1
+Introduction
+There is a clear consensus both in the academic literature and in the policy
+debate that sound management of fiscal risks is essential for both fiscal sus-
+tainability and macroeconomic stability of sovereign countries (Brixi & Schick
+2002, George Kopits 2014, IMF 2016). One of the classes of fiscal risks that
+were particularly neglected in the usual fiscal sustainability analysis is that
+related to contingent liabilities, that is, liabilities whose occurrences depends
+on the outcome of an uncertain event (Brixi & Schick 2002). A second impor-
+tant development in recent years is that with the increased decentralization
+in the provision of public services, the contingent liabilities, both explicit
+and implicit, arising from subnational governments (SNGs) are increasingly
+relevant for fiscal sustainability analysis. This relevance is higher the more
+spending and taxation powers are given to the subnational entities in the
+fiscal framework currently in place in a given country.
+    Although the above characterization could be employed to describe the
+recent economic history of several countries, Brazil might as well be the
+canonical example. A federation with one Federal District, 26 states, and
+5,570 municipalities, Brazil experienced in the 80s and 90s repeated fiscal
+crisis of subnational entities with three rounds of debt restructurings. These
+episodes severely threatened the success of several macroeconomic stabiliza-
+tion programs that hoped to control the three-to-four-digit annual inflation
+rates that wreak havoc the Brazilian economy from 1980 through 1994. It
+was only with the success of the Real Plan in fighting the hyperinflation,
+and with a more comprehensive debt restructuring that aimed to correct the
+underlying SNG fiscal problems, that the political and economic conditions
+enabled for a complete reformulation of the fiscal institutions in place, cul-
+minating with the publication of a Fiscal Responsibility Law (FRL) in 2000
+(Manoel et al. 2013, p. 34-35).
+    The FRL was a comprehensive law that promoted several changes in the
+                                         2
+institutions related to the Brazilian budgetary process. However, for the
+purposes of this study, the focus will be on the controls that were put forth
+for SGNs borrowings. Following the typology of borrowing controls used by
+Ahmad et al. (2005) and first proposed by Ter-Minassian & Craig (1997),
+Brazil has adopted both a rules-based control and an administrative control
+for SNG borrowing. In a rules-based control, a fiscal rule is imposed that
+directly constrains the SNG ability to borrow. In Brazil, the FRL adopted
+both a golden rule and a debt ceiling rule. In an administrative control, the
+central government has some form of direct control over the SGN borrowing.
+In Brazil, if the central government must offer a guarantee for an individual
+borrowing operation, then the Finance Ministry, through the National Trea-
+sury Secretariat (NTS), must assess that entity “payment capacity” before
+the operation is authorized. The current methodology employed by NTS
+was enacted in 2012 and makes use of several fiscal indicators to classify the
+SGNs entities in different credit classifications, similar in spirit to the process
+adopted by rating agencies in giving credit ratings. However, this method-
+ology is currently being revised 1 , as the NTS is looking for an alternative
+suite of fiscal indicators that are more transparent and more easily calculated.
+In this context, the assessement of the statistical and practical significance
+of both the current and the newly set of fiscal indicators used by the Na-
+tional Treasury Secretariat to assess the fiscal sustainability of subnational
+governments in Brazil is both necessary and timely.
+     The strand of literature on Early Warning Systems (EWS) for economic
+crisis are particularly relevant for this endeavour. Following the seminal work
+by Kaminsky et al. (1998) and Berg & Pattillo (1999) on currency crisis, it
+was not long until fiscal crisis were also tackled (Manasse et al. 2003, Fuertes
+& Kalotychou 2007, Baldacci et al. 2011, Berti et al. 2012, Dawood et al.
+2017). In this study, the focus will be on what is usually called the paramet-
+ric approach, that makes use of limited dependent variables models, such as
+probit and logit. There are three main contributions. First, as usually true
+in most countries, disaggregate fiscal data on regional governments tends to
+have a much lower quality and standardization then those available for central
+governments2 . This study aims to compile, consolidate and make available
+   1
+     The NTS published the new set fiscal indicators and opened the methodology
+for a public revision process in the period of 10/05/2017 to 30/06/2017. The ma-
+terial related to this revision is available at http://www.tesouro.fazenda.gov.br/
+sistemagarantiauniao
+   2
+     Although there are several initiatives in place in Brazil to modernize the information
+available for SNGs, in the fiscal transparency evaluation conducted by the IMF in Brazil
+completed in June 2016 and published in May 2017 it is noted that “Weaknesses in fiscal
+reporting also undermine the ability to assess the fiscal position and risks. Not all states
+                                              3
+on machine readable format regional discriminated data on the fiscal vari-
+ables that are needed to compute the fiscal indicators used by the NTS for
+payment capacity evaluation. To the best of the author’s knowledge, this
+database is inexistent today. The second contribution is the expansion of
+the Early Warning System literature for dealing with subnational govern-
+ments. Most of the studies focus on sovereign governments, but, as noted
+by Ianchovichina et al. (2007), SGNs are sufficiently different from sovereign
+governments and demand separate analysis. The third and final contribution
+is that by recognizing a fiscal crisis as a rare event as suggested by King &
+Zeng (2001), that is, a binary dependent variable with dozens to thousands
+of times fewer ones than zeros, we make use of the bias-reduction method
+first proposed by Firth (1993) and implemented by Kosmidis (2017) in the
+R-package brglm.
+    The remainder of this study is organized as follows. Section 2 presents a
+brief literature review on the main characteristics of early warning systems for
+economic crisis and also give a general overview of the institutional context
+under which the National Treasury Secretariat conducts its payment capacity
+evaluations. Section 3 presents a descriptive analysis of the data and also
+outline the econometric model used. Section 4 presents the empirical results
+and section 5 summarizes our conclusions.
+and municipalities comply with their reporting obligations, and information on subna-
+tional finances is generally less timely and comprehensive than information on the central
+governments. (IMF 2017, p. 62)”
+                                              4
+Chapter 2
+Literature Review
+As noted by Baldacci et al. (2011), the literature that aims to build mod-
+els that can provide early warning signals of fiscal sustainability problems
+tend to differ with respect to three major characteristics: the definition of
+the crisis event; the statistical methodology employed; and the set of ex-
+planatory variables used. Broadly following this differences, in section 2.1
+we review theoretical definitions of fiscal sustainability in order to propose a
+definition of fiscal distress1 event that will be used in this study. In section
+2.2 we present a general formulation of the early warning system problem
+and the methodological approach pursued in this study. Regarding the set
+of explanatory variables, since the main objective of this study is to assess
+the significance of the fiscal indicators used by the National Treasury Sec-
+retariat in their mandate to evaluate the payment capacity of subnational
+governments, the explanatory variables are already defined. Therefore we
+let the presentation of the fiscal indicators for section 3.1 coupled with the
+exploratory analysis of the data.
+2.1        Fiscal Distress
+The focus of this study will be on the empirical analysis of the main determi-
+nants of fiscal distress episodes in subnational governments in Brazil in the
+2008-2016 period. Nevertheless, it is important a brief theoretical review of
+the most used concepts of fiscal sustainability so that an appropriate char-
+acterization of what fiscal distress event entails, or, and perhaps even more
+importantly, what it do not entail.
+     There are a few distinct ways in which fiscal sustainability is defined in
+   1
+     For the purposes of this study, fiscal distress, fiscal stress, fiscal crisis, and debt crisis
+will be used as synonymous
+                                               5
+the economic literature. Although they all in some way or another allude to
+the more general concept of sustainability, understood here as a process that
+“meets the needs of the present without compromising the ability of future
+generations to meet their own needs” (Brundtland 1987), the differences
+are important for the interpretation of the empirical results and should be
+emphasized at the outset.
+    A more narrow definition of fiscal sustainability equates it to solvency,
+that is, the ability of an entity, in the case of this study a subnational gov-
+ernment, to make payments in order to service its debt obligations on the
+due date. Although certainly useful for corporations, this definition is far
+to stringent when applied to governments. The reasoning is not as much
+because governments do not actually default on its debt, but, as pointed out
+by Burnside (2005), when it is clear that a a policy mix is unsustainable, gov-
+ernments tend to take remedial actions in order to avoid an outright default.
+A more useful definition of fiscal sustainability takes this into account, and
+can be equated “to a governments ability to indefinitely maintain the same
+set of policies while remaining solvent” (Burnside 2005, pg.11). Therefore it
+makes sense to speak of an unsustainable policy mix even though a default
+on the debt never actually took place. For the purposes of this study, both
+an explicit default on the debt and an unsustainable policy mix should be
+considered an indicator of a fiscal distress event.
+    It is worth pointing out that in the definitions given so far, no distinction
+was made between solvency and liquidity problems. A country may believe
+itself to be solvent, but it still face problems in meeting its obligations because
+of cash flows problems. The reason we don’t pursue this distinction is less
+based on the fact that there are no theorhetical differences between the two
+concepts, but because the empirical consequences of both difficulties are likely
+to be observationally equivalent (Chuhan 2005, pg.89). Both solvency and
+liquidity are related to an entity ability to pay. However, especially because
+of the absence of clear defined rules for bankruptcy in the public sector, the
+govenrment willingess to pay also becomes important, in a tradition that
+goes back at least to Eaton & Gersovitz (1981). Again however, for the
+purposes of this study, both are fiscal crisis episodes steeming from ability or
+willingness to pay are likely to be observationally equivalent.
+    One of the uses of fiscal sustainability that will not be used in this study
+is related to the costs, in terms of economic efficiency or growth, related
+to a given combination of fiscal and monetary policy. Although this use is
+suggested by Burnside (2005), we shall make no claim in this study related
+to it.
+    After looking at the theorethical definitions of fiscal sustainability, its
+worth to take a closer look into how previous literature on EWS defined
+                                           6
+the debt crisis episodes for sovereign governments. Manasse et al. (2003)
+defines a country to be in a debt crisis if either the government fails to meet
+principal or interest payment on external obligation on due date as classified
+by Standard & Poor’s or if it receives a nonconcessional IMF loan in excess of
+100 percent of its quota. Fuertes & Kalotychou (2007) considers a country to
+be in default in a given year if the arrears increase over a threshold percentage
+of external debt and a rescheduling agreement is reached in which the amount
+of debt rescheduled exceeds the decrease in the arrears stock. Baldacci et al.
+(2011) uses a more general definition and considers a fiscal crisis not only
+the episodes of debt default or restructuring and recourse to exceptional
+financing, but also an implicit default cristalized in high inflation rates and a
+deterioration in market acess measured by high bond yields pressures (where
+high is those yield spreads that are more than two standard deviations away
+from the mean).
+      Although the empirical literature is of limited applicability in giving op-
+erational guidance in defining fiscal crisis episodes for this study because of
+differences in sovereign and subnational governments, its possible to see that
+the theorethical elements discussed of solvency and liquidity are present.
+2.2         Early Warning Systems
+Before we delve into the different methodological approaches used by the
+literature in early warning systems, we need a general framework to capture
+the purpose of an EWS model. Following Fuertes & Kalotychou (2007), we
+denote by dit the dummy variable that equals 1 if the state i had a crisis
+event in period t and 0 otherwise. Since the objective is to signal crisis in
+advance, the dependent variable yit of interest is forward-looking in nature,
+and it takes the value of one if a crisis happens during an h time horizon,
+that is                  
+      However, it is important to remark that the information set2 for predicting
+yit is that available at time t − 1. To fix ideas, let the explanatory variable
+be the primary balance as a ratio of GDP and let t = 2016. A prediction
+ŷit = 1 from an EWS with horizon h = 1 implies that using the primary
+balance as a ratio to GDP from 2015 backwards, the model is signalling a
+potential crisis in 2016 for state i. Similarly, if h = 2, the model is signalling
+    2
+      The information set, usually denoted by Ωt consists of the set of all potential explana-
+tory variables that could be included in a regression model.
+                                             7
+a potential crisis in 2016 or 2017. Note that again only the primary balance
+as a ratio to GDP from 2015 backwards is used to make this prediction.
+      In a more general notation, if we let x denote the explanatory vari-
+ables included in the model, and the past of x for state i as Xi,t−1 =
+{xi,t−1 , xi,t−2 , . . . }, the prediction problem of an EWS with a given horizon
+h is given by
+
+      In practice using the whole past Xi,t−1 of the explanatory variables is not
+possible, and we will follow other studies using only the last period variables,
+that is, xi,t−1 . This is not problematic as long as there are stock variables
+that can capture the effects of flows from previous periods.
+      For estimating the function f in (2.2), there are two major approaches
+in the literature on early warning systems. The “indicators” or “signaling”
+approach and the multivariate regression analysis approach (Baldacci et al.
+2011, pg. 5). The first approach belongs to the class of non-parametric
+methods. Their essential characteristic is that they do not assume a spe-
+cific functional form for f , and simply try to estimate a smooth relationship
+between the explanatory and dependent variables. The second approach be-
+longs to the class of parametric methods. In this case, a specific functional
+form for f is assumed, and, with this knowledge at hand, the relevant param-
+eters are estimated3 . In this study, we will take the latter approach. More
+specifically, we will make use of a limited dependent variable model know as
+logit regression4 .
+      As noted by Baldacci et al. (2011), the main reason for using the multivari-
+ate approach in this study is the easily available null hypothesis significance
+tests that can be conducted to assess the statistical significance of both in-
+dividual variables and collection of variables. This allows for a clean way to
+attain one of the objectives of this study, that is, to compare and contrast the
+current and the newly set of fiscal indicators used by the National Treasury
+Secretariat to assess the payment capacity of SGNs in Brazil.
+    3
+      James et al. (2013) is a nice introduction and overview of statistical learning tech-
+niques, both parametric and non-parametric. Hastie et al. (2009) is a more advanced and
+complete treatment.
+    4
+      The specific characteristics of the model employed are discussed in section 3.2
+                                                8
+Chapter 3
+Methods
+3.1       Data
+The majority of the explanatory variables used in this study are derived
+from the fiscal reports made available by the National Treasury Secretariat
+(NTS), who is responsible for collecting primary fiscal data from subnational
+governments in Brazil. The focus of this section is to present a exploratory
+and descriptive analysis of the fiscal indicators that are used (or whose use
+is proposed in the new methodology) by the NTS in its payment capacity
+evaluation.
+     The final dataset used in this study consists of fiscal indicators compiled
+for the 26 states and the federal district from 2008 through 2016, totaling
+n = 243 observations. Since the explanatory variables will be lagged 1 year,
+the sample size is reduced from 2009-2016, totaling n = 216 for estimation
+purposes.
+     For the purposes of this study, the publication of a decree of financial
+calamity1 will be the event that characterizes a fiscal crisis in a given state-
+year. The reasoning is that, consistent with the discussion made in section
+2.1, the decree of public calamity, although legally questionable2 , clearly
+signals that the policy mix has become unsustainable, and, even if there are
+still doubts about the states ability to pay in terms of solvency and liquidity,
+definitly they don’t have the willingness to pay. Therefore the dummy default
+dit will take take the value of one in 2016 for the states of Rio de Janeiro
+(RJ), Rio Grande do Sul (RS), and Minas Gerais (MG). Following previous
+   1
+     http://economia.estadao.com.br/noticias/geral,
+veja-por-que-os-estados-decretam-calamidade-financeira,10000096967
+   2
+     http://g1.globo.com/bom-dia-brasil/noticia/2016/12/
+calamidade-financeira-de-estados-nao-e-reconhecida-pelo-governo.html
+                                        9
+studies we will use the a time-horizon of one year h = 1, meaning that the
+forward-looking independent variable yit will be equal to dit .
+    Table 3.1 presents descriptive statistics for the explanatory variables that
+will be used in this study. With respect to the fiscal indicators of the current
+methodology, four variables are especially different in the non-calamity/calamity
+dichotomy. These variables show that the states that did not declared finan-
+cial calamity have lower debt (Gross debt / Net current revenue - 0.86 ± 0.56
+vs 2.19 ± 0.13), a less expensive payroll cost (Compensation of employees /
+Net current revenue - 0.54 ± 0.09 vs 0.74 ± 0.04), more savings (Current fiscal
+balance / Current revenue - 0.23 ± 0.17 vs 0.00 ± 0.12) and more investments
+(Gross investment in nonfinancial assets / Total expenditure - 0.09 ± 0.04 vs
+0.03 ± 0.01) than those states that did declare financial calamity. The ratio
+Primary balance / Debt Service also shows that the calamity states were
+running on average a primary deficit (−0.66 ± 1.00), although with too much
+variability overall to characterize the differences between the two groups.
+The same holds true for the ratio Social contributions / Social benefits that
+shows that the states that declared calamity on average have a larger social
+security deficit, although with large variability overall.
+    In regard to the fiscal indicators proposed by the new methodology, the
+non-calamity/calamity difference is startling. Besides the already identified
+higher debt and lower savings of calamity states, they have very large liquidity
+problems compared to the non-calamity states (Current liabilities / Cash
+and cash equivalents - 0.47 ± 0.36 vs 2.57 ± 0.70). Although with the data
+available it is not possible to distinguish how big is the arrears stock, this
+proxy indicates that the number is likely to be very large for calamity states.
+    One particular feature of the data that is not possible to gauged from table
+3.1 is for how long the states that declared financial calamity in 2016 had
+worse fiscal indicators than the other states. Figure 3.1 shows this evolution
+for the fiscal indicators of the new methodology. The major trend is that
+in the whole 2008-2016 the two groups of states were different, but, the
+states that declared financial calamity in 2016 had a major fiscal deterioration
+in 2015 and 2016. The evolution of Current liabilities / Cash and cash
+equivalents is particularly marked, going from an average of 0.98 in 2014, to
+1.88 in 2015 and balloming to 2.57 in 2016.                                                                                                                                                                       12
+3.2       Econometric Model
+In this section we mostly follow the expositions and results from Greene
+(2011), Heij et al. (2004) and Davidson & MacKinnon (2004) adapted to the
+notation used in this study.
+    To assess the relative importance of these several potential explanatory
+variables, we need to use multiple regression analysis. The main model in
+this study will be a logit model, which is a special case of a binary response
+model. The binary response model can be derived from an underlying latent
+variable model. The latent variable model is
+             yit∗ = x0i,t−1 β + it ,    (i = 1, . . . , N and t = 1, . . . , T ) (3.1)
+    This is the so-called index function, x0i,t−1 β is the systematic term and it
+is an idiosyncratic error term. In our case, the latent variable yit∗ can be inter-
+preted as either a propensity to default or as a measure of creditworthiness.
+We don’t observe yit∗ , only yit according to
+                                         
+    Maximization of 3.4 with respect to β gives the maximum likelihood
+estimates.
+                                               13
+Perfect Classifier
+A common problem in applied work with binary dependent variables occurs
+whenever there is a linear combination of the explanatory variables that can
+perfect classify every observation. That is
+
+    This phenomenon is called complete separation, and it produces infinite
+parameter estimates in the usual numerical optimization algorithms that at-
+tempt to make the value of 3.4 as close to zero as possible. Davidson &
+MacKinnon (2004) gives three main reasons for the occurance of this phe-
+nomenon in practice. The sample size is very small, the model fits extramely
+well, or the dataset is characterized by a much larger proportion of 1s or 0s.
+It is likely the case that this study fulfills all three criteria, and therefore
+a different estimation procedure is warranted. We make use of a maximum
+penalized likelihood estimation first suggested by Firth (1993) and imple-
+mented by Kosmidis (2017) in the R-package brglm. The advantage of this
+procedure is that the even in cases of complete or quasi-complete separation
+the estimates and their standard errors are always finite (Kosmidis 2017).
+Inference and Goodness of fit
+Inference on the logit model can be conducted in the usual fashion. The
+significance of individual explanatory variables can be tested by the usual
+t-test and the significance of joint variables can be tested by the likelihood
+ratio test (Heij et al. 2004, p. 453). The former is based on the loss of log-
+likelihood that results from the imposition of g independent restrictions on
+the parameters of a given model. The test statistic can be computed as
+
+    where l(θ̂u ) is the log-likelihood of the unrestricted model and l(θ̂r ) the
+log-likelihood of the restricted model (the one with the restrictions applied).
+The null hypothesis H0 : θ̂r is rejected in favor of the alternative H1 : θ̂u if
+the test statistic is sufficiently large.
+                                          14
+Chapter 4
+Results
+Before presenting the econometric results, a word of caution is in order. It is
+important to keep in mind that all the results rests on the definition of fiscal
+distress event, which, in this study, produced only 3 crisis episodes across the
+sample of 243 observations. As discussed in section 3.2, this raises issues of
+bias in the estimates and problems related to complete and quasi-complete
+separation. Although we are making use of a bias reduction method proposed
+by Firth (1993) and implemented by Kosmidis (2017), by no means this puts
+an definitive end to concerns related to the robustness of the results.
+    In this study we followed two different specification stategies in order to
+better serve the objectives of the study, namely, to test the statistical signif-
+icance of the fiscal indicators used the by the National Treasury Secretariat
+(NTS) in payment capacity evaluations. The first was a “testing down” ap-
+proach, while the second a “testing up”, in the sense suggested by Kennedy
+(2008).
+    In the “testing down” approach we began with a model that includes
+all explanatory variables. From this full model, we considered two reduced
+nested models that were formed based on the fiscal indicators present in each
+payment capacity methodology. This alows us to test for the joint significance
+of several explanatory variables and directly compare the significance of each
+methodology.
+    In the “testing up” approach, the base model uses as explanatory vari-
+ables only the 3 fiscal ratios proposed in the new payment capacity evalua-
+tion. We then run individual regressions against each of the fiscal variables
+set forth in the Finance Minister Decree n 306, 10/09/2012. Finally, all
+significant variables of the second stage are then added one by one to the
+base model, and we conduct tests for the significance and look for changes
+in sign and/or signficance in the base variables. This strategy allows us to
+better grasp if the proposed set of fiscal indicators of the new methodology
+                                       15
+could usefully be expanded with previous used ratios, while minimizing the
+number of tests conducted. We don’t “test down” the full model because it
+is not clear what criteria should be used to exclude a given variable at each
+stage without eitheir going through all combinations or making more or less
+arbitrary choices.
+    Two last remarks are in order before we delve into the results. First, the
+ratio Gross Debt / Net current revenue is included in both methodologies but
+obvisouly will be included only once in the full model. Similarly, the calcula-
+tion rule of the ratio Current fiscal balance / Current revenue was changed in
+the new methodology to Current expenses / Current revenue. However, since
+they convey the same information, in order to avoid multicollinearity issues,
+only the ratio Current expenses / Current revenue from the newly proposed
+methodology will be used for estimation purposes. Second, we follow the sug-
+gestion given in Gelman (2008) and scale all fiscal indicators with a division
+by two standard deviations, that is, zi,t−1 = xi,t−1 − mean(x)/2 · sd(x). The
+interpretation of the regression coefficients is equal to the mean ±1 standard
+deviation, the same comparision of possible untransformed binary predictors.
+To say it differently, the coefficients can now be interpretable as changes from
+low to high values of the explanatory variable of interest.
+Testing down
+Table 4.1 presents the regression estimates for the three first models of in-
+terest. Model 1 is the full model, and includes all fiscal indicators used by
+the NTS, be in the current or the new methodology. We also estimate two
+nested models that correspond to particular restrictions applied to the full
+model. Model 2 corresponds to a restricted model in which all variables of
+the current methodology are set to zero. Model 3 on the other hand, corre-
+sponds to the restricted model in which all variables of the new methodology
+are set to zero. Although, in this case, only the ratio Current liabilities /
+Cash and cash equivalents is set to zero.
+    It is worth reminding the reader that, contrary to linear models, the
+coefficients in non-linear models can’t be interpreted as marginal effects,
+although we can interpret both the sign and the relative magnitude of the
+relative magnitude of the coefficients.
+    In model 1, both Current liabilities / Cash and cash equivalents and
+Gross investment in nonfinancial assets / Total expenditure were significant
+at a 5% level. However, the sign in the latter was somewhat surprising. We
+would expect that states that were on the verge of a crisis would reduce
+their investment rate because of the discretionary nature of this type of
+expenditure. Therefore, in a predictive sense, a higher investment rate would
+                                         16
+translate into a smaller probability of a fiscal crisis, the opposite of what was
+found in model 1. In model 3 the sign is negative as expected, but the variable
+was no longer significant. One possible explanation is related to the large
+amount of investment spending undertaken by Rio de Janeiro for the 2016
+Summer Olympics, even when they were already financially constrained. In
+model 2 only Current liabilities / Cash and cash equivalents was significant
+at a 5% level. In model 3, that excludes only Current liabilities / Cash and
+cash equivalents with respect to model 1, several variables were significant.
+Gross debt / Net current revenue and Primary balance / Debt service were
+significant at the 5% level while Current expenses / Current revenue and
+Compensation of employees / Net current revenue at the 10% level. Because
+of this drastic change of the significant explanatory variables in going from
+model 1 to model 3, it does raises concerns about a ommited variable bias in
+model 3.
+    In order to better grasp which model is in some sense better, we can
+conduct a likelihood-ratio test described in section 3.2. First, likely due to
+the bias-reduction method employed, the log-likelihood for model 2 is in fact
+greather than the log-likelihood for the unrestricted model 1, meaning that
+there was a likelihood gain moving from imposing the parameter restric-
+tion. For model 3, the test statistic is LR = 2 · (−5.964 + 8.246) = 4.56.
+Compared with a χ2 with one degree of freedom, the p-value is equal to 0.033.
+We therefore reject the null hypothesis at a 5% significance level, meaning
+that the loss of likelihood in imposing the restriction is likely different from
+zero and the unrestricted model (model 1) should be considered the best one.
+Together, this results indicate that in choosing between the information set
+of the current versus the newly proposed methodology, the newly proposed
+methodology appears to be the better choice.
+                                       17
+ 
+                                                      18
+Testing up
+Table 4.2 presents the regression estimates for the “testing up” approach.
+Model 1 (Model 2 in table 4.1) is the base model that uses the fiscal ratios
+proposed in the new payment capacity evaluation as explanatory variables.
+We first ran individual simple regressions against each of the fiscal variables
+set forth in the Finance Minister Decree n 306, 10/09/2012. The ratios Debt
+service / Net current revenue, Compensation of employees / Net current
+revenue and Gross investment in nonfinancial assets / Total expenditure
+were significant in the individual regression. We then added the ratios to
+the base model. This is reported in models 2 through 4 in table 4.2. Debt
+service / Net current revenue (Model 2) was not significant and didn’t change
+the sign of the other explanatory variables. Compensation of employees /
+Net current revenue (Model 3) was also not significant, but with its inclusion
+in the model Current expenses / Current revenue was significant at a 5%
+level. The sign however was somewhat puzzling. It indicates that holding
+compensation of employees fixed, lower savings reduces the probability of
+a crisis. There are no readily available explanations for this result except
+for the observation that Compensation of employees is the most significant
+component of current expenses in all states. Gross investment in nonfinancial
+assets / Total expenditure was (Model 4) was not only significant at the 10%
+level, but made Gross debt / Net current revenue significant as well at the
+same level. The sign was again positive, implying that higher investment is
+correlated with higher probability of a fiscal crisis.
+    We finally add Compensation of employees / Net current revenue and
+Gross investment in nonfinancial assets / Total expenditure to the base model
+(Model 5) giving what can be considered the final specification of the “testing
+up” strategy. In this model Current liabilities / Cash and cash equivalents
+and Gross investment in nonfinancial assets / Total expenditure were signif-
+icant at the 5% level. We again conduct a likelihood ratio test to compare
+the unrestricted model (model 5) with the restricted one (model 1). The test
+statistic is LR = 2 · (−4.063 + 5.804) = 3.48. Compared with a χ2 with two
+degrees of freedom, the p-value is equal to 0.175. We therefore fail to reject
+the null hypothesis. The interpretation is that it might be the case that the
+loss of likelihood by excluding the two variables from the unrestricted model
+is not different from zero. Again this indicates that restricting the informa-
+tion set to the fiscal indicators of the newly proposed methodology appears
+to be a reasonable choice.
+                                       19
+   
+                                                               20
+Chapter 5
+Conclusion
+The purpose of the current study was to evaluate the statistical and practical
+significance of both the current and the newly proposed fiscal indicators used
+by the National Treasury Secretariat (NTS) to assess the payment capacity
+of subnational governments in Brazil. The current methodology enacted in
+2012 by the NTS was deemed to be overly complicated in general and also
+based on a set of fiscal indicators that could potentially be simpler in terms of
+dimensionality without harm in terms of predictive performance. This view
+was justified on the basis of the correlation between the fiscal indicators.
+    This study has identified that the new methodology that uses only 3 ratios
+instead of the 8 of the current methodology is in fact statistically superior
+in terms of the likelihood of the given data. This superior performance is
+mostly attributed to the ratio Current liabilities / Cash and cash equivalents
+who proved itself to be significant in all specifications employed in this study.
+    Expressing these results in the language of the concepts related to fiscal
+sustainability discussed in section 2.1, we can say that empirically, the will-
+ingness and ability to pay of an SGN in Brazil appear to be mostly explained
+by its liquidity position. Solvency ratios appear to be only instrumental for
+this explanation, in the sense that they matter only to the extent that in-
+directly they influence the trajectory of liquidity ratios. To exemplify, high
+debt ratios to net current revenue can only explain fiscal crisis episodes in
+Brazil to the extent that debt service obligations generate higher current
+liabilities.
+    The research has also shown that for the sample at hand, the fiscal indi-
+cators proposed in the new methodology proposed by the NTS could maybe
+fruitfully include Gross investment in nonfinancial assets / Total expenditure.
+However, this result appears to be more related to the observed behavior of
+Rio de Janeiro, who, even in financial difficulties, kept investment rates high
+because of the commitments made with the 2016 Summer Olympics.
+                                        21
+     There are four major sources of weakness in this study, all in some way or
+another related to data constraints. First, we did not allow for the presence
+of unobservable heterogeneity between states, by using, for example, a fixed
+effects logit model. The reason for this is simply that in fixed effect estimation
+all the observations corresponding to states that did not face a crisis episode
+in the sample horizon would be dropped out of the likelihood function, leaving
+only the observations of Rio de Janeiro, Rio Grande do Sul and Minas Gerais.
+     The second source of weakness is related to the definition of fiscal crisis
+episode adopted. The enactment of a decree of financial calamity is a politi-
+cal process that a given state might not participate because it does not align
+with the political calculus of the politicians involved in this decision. Al-
+though this sounds like a tautology, it is especially important in the current
+case. The reason is that the most common interpretation of the Brazilian
+legal system, shared by the Ministry of Finance1 , says that the decree of
+calamity should be restricted to natural disasters, and therefore the benefits,
+such as the possibility to delay payments to creditors and to bypass some
+legal requirements for procurement and budgeting process, is not valid under
+“financial calamity”. A more reliable definition of fiscal crisis episode would
+need to make use of arrears data that still do not exist for SGN’s in Brazil.
+     A third source of weakness comes from the 2008-2016 horizon employed.
+Brazil experienced in the 80s and 90s repeated fiscal crisis of subnational
+entities with three rounds of debt restructurings. These should clearly be
+considered a fiscal crisis episode. However, the majority of the explanatory
+variables used in this study were fiscal variables and indicators derived from
+the datasets provided by the National Treasury Secretariat. Although, the
+original period covered by the data published by NTS extends from 1986
+through 2016, totalling 31 years of data, events like hyperinflation, change
+of currencies, change in fiscal reporting and budget classifications and no
+tracking of stock variables makes the process of compiling a cleaned and
+consistent dataset a research enterprise of its own.
+     Finally, because there were only three fiscal crisis episodes in the sample
+that happened in the same year, it was not possible to look into out of sample
+forecast accuracy measures, which are ultimately the final yardstick by which
+EWS models should be judged. (Berg et al. 2005).
+     Putting the need for the collection of a more comprehensive dataset of
+fiscal variables on SGN aside, the cited weakness of this study are useful
+alternatives for future work. Additionally, because most of the EWS liter-
+ature is currently focused on sovereign countries, studies that use different
+   1
+     http://g1.globo.com/bom-dia-brasil/noticia/2016/12/
+calamidade-financeira-de-estados-nao-e-reconhecida-pelo-governo.html
+                                       22
+strategies in the three areas that tend to differentiate early warning systems
+models, namely, the definition of the crisis event, the statistical methodology
+employed, and the set of explanatory variables, but applied to SGNs, would
+be a welcome addition to the literature.
